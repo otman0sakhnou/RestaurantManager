@@ -1,0 +1,450 @@
+@page "/index/details/{Id:guid}"
+@using RestoManagement.BlazorApp.Services
+@using RestoManagement.Domain.DTOs
+@using RestoManagement.Services
+@using Microsoft.AspNetCore.Components.Authorization
+@inject HttpClient Http
+@inject IJSRuntime JSRuntime
+@inject RestaurantService restaurantService
+@inject NavigationManager NavigationManager
+@inject CustomAuthStateProvider AuthStateProvider
+
+<div class="@(_isDarkMode ? "bg-dark text-light" : "bg-light") min-vh-100 py-4">
+    <div class="container">
+        <!-- Bouton retour et en-tête -->
+        <div class="d-flex align-items-center mb-4">
+            <button class="btn btn-outline-secondary me-3" @onclick="NavigateBack">
+                <i class="bi bi-arrow-left me-2"></i>Retour
+            </button>
+            <h1 class="mb-0">Détails du Restaurant</h1>
+        </div>
+
+        @if (IsLoading)
+        {
+            <div class="text-center py-5">
+                <div class="spinner-border text-success" role="status">
+                    <span class="visually-hidden">Chargement...</span>
+                </div>
+                <p class="mt-3 text-muted">Chargement des détails du restaurant...</p>
+            </div>
+        }
+        else if (HasError)
+        {
+            <div class="alert alert-danger d-flex align-items-center" role="alert">
+                <i class="bi bi-exclamation-triangle-fill me-2 fs-4"></i>
+                <div>
+                    <h5 class="alert-heading">Impossible de charger le restaurant</h5>
+                    <p class="mb-0">@ErrorMessage</p>
+                    <button class="btn btn-outline-danger mt-2" @onclick="LoadRestaurant">
+                        <i class="bi bi-arrow-clockwise me-2"></i>Réessayer
+                    </button>
+                </div>
+            </div>
+        }
+        else if (Restaurant != null)
+        {
+            <div class="card border-0 shadow-sm @(_isDarkMode ? "bg-dark text-light border-secondary" : "bg-white")">
+                <div class="row g-0">
+                    <!-- Image du Restaurant -->
+                    <div class="col-md-5 position-relative">
+                        @if (!string.IsNullOrEmpty(Restaurant.ImagePath))
+                        {
+                            <img src="@_imageUrl" alt="@Restaurant.Nom" class="img-fluid rounded-start"
+                                 style="height: 100%; width: 100%; object-fit: cover;">
+                        }
+                        else
+                        {
+                            <img
+                                src="@($"https://source.unsplash.com/800x600/?restaurant,{Restaurant.Cuisine?.Replace(" ", "")}")"
+                                alt="@Restaurant.Nom" class="img-fluid rounded-start"
+                                style="height: 100%; width: 100%; object-fit: cover;">
+                        }
+
+                        <!-- Badge de notation -->
+                        <div class="position-absolute top-0 end-0 m-3">
+                            <span class="badge bg-warning text-dark fs-5 d-flex align-items-center p-2">
+                                <i class="bi bi-star-fill me-1"></i>
+                                @Restaurant.Note
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Détails du Restaurant -->
+                    <div class="col-md-7">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h2 class="card-title fs-1 fw-bold mb-1">@Restaurant.Nom</h2>
+                                    <span class="badge bg-light text-dark fs-6 mb-2">@Restaurant.Cuisine</span>
+                                </div>
+
+                                <!-- Actions Admin -->
+                                <AuthorizeView Roles="Admin">
+                                    <Authorized>
+                                        <div class="d-flex gap-2">
+                                            <button class="btn btn-outline-secondary"
+                                                    @onclick="() => NavigateToEdit(Restaurant.Id)">
+                                                <i class="bi bi-pencil me-2"></i>Modifier
+                                            </button>
+                                            <button class="btn btn-outline-danger"
+                                                    @onclick="() => ConfirmDelete(Restaurant)">
+                                                <i class="bi bi-trash me-2"></i>Supprimer
+                                            </button>
+                                        </div>
+                                    </Authorized>
+                                </AuthorizeView>
+                            </div>
+
+                            <!-- Adresse -->
+                            <div class="d-flex align-items-start mb-4">
+                                <i class="bi bi-geo-alt-fill fs-4 me-3 text-success"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Adresse</h6>
+                                    <p class="mb-0">@Restaurant.Adresse</p>
+                                </div>
+                            </div>
+
+                            <!-- Étoiles de notation -->
+                            <div class="d-flex align-items-start mb-4">
+                                <i class="bi bi-star-fill fs-4 me-3 text-warning"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Évaluation</h6>
+                                    <div>
+                                        @for (var i = 1; i <= 5; i++)
+                                        {
+                                            if (i <= Math.Floor(Restaurant.Note))
+                                            {
+                                                <i class="bi bi-star-fill text-warning fs-5"></i>
+                                            }
+                                            else if (i <= Math.Ceiling(Restaurant.Note) && Restaurant.Note % 1 != 0)
+                                            {
+                                                <i class="bi bi-star-half text-warning fs-5"></i>
+                                            }
+                                            else
+                                            {
+                                                <i class="bi bi-star text-warning fs-5"></i>
+                                            }
+                                        }
+                                        <span class="ms-2">(@Restaurant.Note sur 5)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Type de Cuisine -->
+                            <div class="d-flex align-items-start mb-4">
+                                <i class="bi bi-egg-fried fs-4 me-3 text-success"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Cuisine</h6>
+                                    <p class="mb-0">@Restaurant.Cuisine</p>
+                                </div>
+                            </div>
+
+                            <!-- Emplacement de la carte -->
+                            <div class="mt-4 mb-3">
+                                <h6 class="fw-bold mb-2">Emplacement</h6>
+                                <div class="bg-light rounded"
+                                     style="height: 200px; display: flex; align-items: center; justify-content: center;">
+                                    <div class="text-center text-muted">
+                                        <i class="bi bi-map fs-1 mb-2"></i>
+                                        <p>La carte serait affichée ici</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Options de partage -->
+                            <div class="mt-4">
+                                <h6 class="fw-bold mb-2">Partager</h6>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-outline-primary" @onclick="ShareOnFacebook">
+                                        <i class="bi bi-facebook"></i>
+                                    </button>
+                                    <button class="btn btn-outline-info" @onclick="ShareOnTwitter">
+                                        <i class="bi bi-twitter"></i>
+                                    </button>
+                                    <button class="btn btn-outline-success" @onclick="ShareViaWhatsapp">
+                                        <i class="bi bi-whatsapp"></i>
+                                    </button>
+                                    <button class="btn btn-outline-secondary" @onclick="CopyLink">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Restaurants Similaires -->
+            @if (SimilarRestaurants.Any())
+            {
+                <div class="mt-5">
+                    <h3 class="mb-4">Restaurants Similaires</h3>
+                    <div class="row g-4">
+                        @foreach (var restaurant in SimilarRestaurants)
+                        {
+                            <div class="col-md-4">
+                                <div
+                                    class="card h-100 shadow-sm restaurant-card @(_isDarkMode ? "bg-dark text-light border-secondary" : "")"
+                                    @onclick="() => NavigateToDetails(restaurant.Id)">
+                                    <div class="position-relative">
+                                        @if (!string.IsNullOrEmpty(restaurant.ImagePath))
+                                        {
+                                            <img src="@GetSimilarRestaurantImageUrl(restaurant.ImagePath)" alt="@restaurant.Nom" class="card-img-top"
+                                                 style="height: 150px; object-fit: cover;">
+                                        }
+                                        else
+                                        {
+                                            <img
+                                                src="@($"https://source.unsplash.com/400x250/?restaurant,{restaurant.Cuisine?.Replace(" ", "")}")"
+                                                alt="@restaurant.Nom" class="card-img-top"
+                                                style="height: 150px; object-fit: cover;">
+                                        }
+                                        <div class="position-absolute top-0 end-0 m-2">
+                                            <span class="badge bg-warning text-dark">
+                                                <i class="bi bi-star-fill me-1"></i>
+                                                @restaurant.Note
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-1">@restaurant.Nom</h5>
+                                        <p class="card-text small text-muted mb-0">@restaurant.Cuisine</p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="alert alert-warning">
+                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                Restaurant non trouvé
+            </div>
+        }
+    </div>
+</div>
+
+<!-- Modal de confirmation de suppression -->
+<div class="modal fade @(_showDeleteModal ? "show" : "")" id="deleteModal" tabindex="-1"
+     aria-labelledby="deleteModalLabel"
+     style="display: @(_showDeleteModal ? "block" : "none")" aria-modal="@_showDeleteModal" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content @(_isDarkMode ? "bg-dark text-light" : "")">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Confirmer la suppression</h5>
+                <button type="button" class="btn-close" @onclick="CloseDeleteModal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center mb-4">
+                    <i class="bi bi-exclamation-triangle text-danger" style="font-size: 3rem;"></i>
+                </div>
+                <p>Êtes-vous sûr de vouloir supprimer le restaurant <strong>@(_restaurantToDelete?.Nom)</strong> ?</p>
+                <p class="text-danger small">Cette action ne peut pas être annulée.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" @onclick="CloseDeleteModal">Annuler</button>
+                <button type="button" class="btn btn-danger" @onclick="DeleteRestaurant">
+                    <i class="bi bi-trash me-2"></i>Supprimer
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Arrière-plan Modal -->
+@if (_showDeleteModal)
+{
+    <div class="modal-backdrop fade show"></div>
+}
+
+@code {
+    [Parameter] public Guid Id { get; set; }
+
+    private RestaurantRes Restaurant { get; set; }
+    private List<RestaurantRes> SimilarRestaurants { get; set; } = new();
+    private bool _isDarkMode;
+    private bool IsLoading = true;
+    private bool HasError = false;
+    private string ErrorMessage = "";
+    private bool IsAdmin = false;
+    private string _imageUrl = "";
+    private Dictionary<string, string> _similarRestaurantImageUrls = new Dictionary<string, string>();
+
+    // Confirmation de suppression
+    private bool _showDeleteModal = false;
+    private RestaurantRes _restaurantToDelete;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _isDarkMode = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "theme") == "dark";
+        await CheckUserRole();
+        await LoadRestaurant();
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (Restaurant == null || Restaurant.Id != Id)
+        {
+            await LoadRestaurant();
+        }
+    }
+
+    private async Task CheckUserRole()
+    {
+        try
+        {
+            var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+            var user = authState.User;
+
+            IsAdmin = user.Identity.IsAuthenticated && user.IsInRole("Admin");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Erreur lors de la vérification du rôle de l'utilisateur: {ex.Message}");
+            IsAdmin = false;
+        }
+    }
+
+    private async Task LoadRestaurant()
+    {
+        try
+        {
+            IsLoading = true;
+            HasError = false;
+            ErrorMessage = "";
+            StateHasChanged();
+
+            // Charger les détails du restaurant
+            Restaurant = await restaurantService.GetByIdAsync(Id);
+
+            if (Restaurant != null)
+            {
+                // Charger l'URL de l'image
+                if (!string.IsNullOrEmpty(Restaurant.ImagePath))
+                {
+                    _imageUrl = await restaurantService.GetImageUrlAsync(Restaurant.ImagePath);
+                }
+
+                // Charger les restaurants similaires (même cuisine)
+                var allRestaurants = await restaurantService.GetAllAsync();
+                SimilarRestaurants = allRestaurants
+                    .Where(r => r.Id != Id && r.Cuisine == Restaurant.Cuisine)
+                    .Take(3)
+                    .ToList();
+
+                // Précharger les URLs des images pour les restaurants similaires
+                foreach (var restaurant in SimilarRestaurants)
+                {
+                    if (!string.IsNullOrEmpty(restaurant.ImagePath))
+                    {
+                        var imageUrl = await restaurantService.GetImageUrlAsync(restaurant.ImagePath);
+                        _similarRestaurantImageUrls[restaurant.ImagePath] = imageUrl;
+                    }
+                }
+            }
+
+            IsLoading = false;
+        }
+        catch (Exception ex)
+        {
+            IsLoading = false;
+            HasError = true;
+            ErrorMessage = ex.Message;
+            Console.WriteLine($"Erreur lors du chargement du restaurant: {ex.Message}");
+        }
+    }
+
+    private string GetSimilarRestaurantImageUrl(string imagePath)
+    {
+        if (string.IsNullOrEmpty(imagePath))
+            return string.Empty;
+
+        if (_similarRestaurantImageUrls.ContainsKey(imagePath))
+            return _similarRestaurantImageUrls[imagePath];
+
+        // Fallback: construire l'URL directement
+        return $"{Http.BaseAddress}{imagePath}";
+    }
+
+    private void NavigateBack()
+    {
+        NavigationManager.NavigateTo("/index");
+    }
+
+    private void NavigateToDetails(Guid id)
+    {
+        NavigationManager.NavigateTo($"/index/details/{id}");
+    }
+
+    private void NavigateToEdit(Guid id)
+    {
+        NavigationManager.NavigateTo($"/index/edit/{id}");
+    }
+
+    private void ConfirmDelete(RestaurantRes restaurant)
+    {
+        _restaurantToDelete = restaurant;
+        _showDeleteModal = true;
+    }
+
+    private void CloseDeleteModal()
+    {
+        _showDeleteModal = false;
+        _restaurantToDelete = null;
+    }
+
+    private async Task DeleteRestaurant()
+    {
+        if (_restaurantToDelete != null)
+        {
+            try
+            {
+                await restaurantService.DeleteAsync(_restaurantToDelete.Id);
+                await JSRuntime.InvokeVoidAsync("showToast", "Succès", "Restaurant supprimé avec succès", "success");
+                NavigateBack();
+            }
+            catch (Exception ex)
+            {
+                await JSRuntime.InvokeVoidAsync("showToast", "Erreur", $"Échec de la suppression du restaurant: {ex.Message}", "error");
+            }
+            finally
+            {
+                CloseDeleteModal();
+            }
+        }
+    }
+
+    // Méthodes de partage social
+    private async Task ShareOnFacebook()
+    {
+        var url = NavigationManager.Uri;
+        var shareUrl = $"https://www.facebook.com/sharer/sharer.php?u={Uri.EscapeDataString(url)}";
+        await JSRuntime.InvokeVoidAsync("open", shareUrl, "_blank");
+    }
+
+    private async Task ShareOnTwitter()
+    {
+        var url = NavigationManager.Uri;
+        var text = $"Découvrez {Restaurant.Nom} - cuisine {Restaurant.Cuisine} avec une note de {Restaurant.Note}/5 !";
+        var shareUrl = $"https://twitter.com/intent/tweet?text={Uri.EscapeDataString(text)}&url={Uri.EscapeDataString(url)}";
+        await JSRuntime.InvokeVoidAsync("open", shareUrl, "_blank");
+    }
+
+    private async Task ShareViaWhatsapp()
+    {
+        var url = NavigationManager.Uri;
+        var text = $"Découvrez {Restaurant.Nom} - cuisine {Restaurant.Cuisine} avec une note de {Restaurant.Note}/5 !";
+        var shareUrl = $"https://wa.me/?text={Uri.EscapeDataString(text + " " + url)}";
+        await JSRuntime.InvokeVoidAsync("open", shareUrl, "_blank");
+    }
+
+    private async Task CopyLink()
+    {
+        var url = NavigationManager.Uri;
+        await JSRuntime.InvokeVoidAsync("navigator.clipboard.writeText", url);
+        await JSRuntime.InvokeVoidAsync("showToast", "Succès", "Lien copié dans le presse-papiers", "success");
+    }
+}

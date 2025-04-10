@@ -1,0 +1,305 @@
+@page "/index/add"
+@page "/index/edit/{Id:guid}"
+@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Http.Internal
+@using RestoManagement.BlazorApp.Services
+@using RestoManagement.Domain.DTOs
+@inject RestaurantService RestaurantService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+
+<div class="@(GetDarkModeClass("bg-light", "bg-dark")) d-flex justify-content-center align-items-center p-4">
+    <div class="@(GetDarkModeClass("bg-white", "bg-dark text-light")) shadow rounded p-4 w-100" style="max-width: 32rem;">
+        <h2 class="fs-3 fw-semibold mb-3">
+            🍽️ @(_isEditMode ? "Edit Restaurant" : "Add New Restaurant")
+        </h2>
+
+        <EditForm Model="@_restaurant" OnValidSubmit="HandleValidSubmit" class="d-flex flex-column gap-3">
+            <DataAnnotationsValidator />
+            
+            <div>
+                <label class="form-label fw-medium">Restaurant Name</label>
+                <InputText @bind-Value="_restaurant.Nom" class="@GetInputClass()" />
+
+
+                <ValidationMessage For="@(() => _restaurant.Nom)" class="text-danger small" />
+            </div>
+            
+            <div>
+                <label class="form-label fw-medium">📍 Address</label>
+                <InputText @bind-Value="_restaurant.Adresse" class="@GetInputClass()" />
+
+                <ValidationMessage For="@(() => _restaurant.Adresse)" class="text-danger small" />
+            </div>
+            
+            <div>
+                <label class="form-label fw-medium">🍛 Cuisine Type</label>
+                <InputText @bind-Value="_restaurant.Cuisine" class="@GetInputClass()" />
+
+                <ValidationMessage For="@(() => _restaurant.Cuisine)" class="text-danger small" />
+            </div>
+
+          
+            <div>
+                <label class="form-label fw-medium">⭐ Rating (0-5)</label>
+                <InputNumber  @bind-Value="_restaurant.Note" class="@GetInputClass()" />
+
+                <ValidationMessage For="@(() => _restaurant.Note)" class="text-danger small" />
+            
+                <div class="mt-2">
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        var rating = i;
+                        if (i <= Math.Floor(_restaurant.Note))
+                        {
+                            <i class="bi bi-star-fill text-warning" @onclick="() => SetRating(rating)"></i>
+                        }
+                        else if (i <= Math.Ceiling(_restaurant.Note) && _restaurant.Note % 1 != 0)
+                        {
+                            <i class="bi bi-star-half text-warning" @onclick="() => SetRating(rating)"></i>
+                        }
+                        else
+                        {
+                            <i class="bi bi-star text-warning" @onclick="() => SetRating(rating)"></i>
+                        }
+                    }
+                </div>
+            </div>
+
+        
+            <div class="mb-3">
+                <label class="form-label fw-medium">Restaurant Image</label>
+                
+                <div class="@GetDropzoneClass()"
+                     @onclick="OpenFileDialog"
+                     @ondragenter="HandleDragEnter"
+                     @ondragleave="HandleDragLeave"
+                     @ondragover:preventDefault
+                     @ondrop="HandleDrop">
+                    <i class="bi bi-cloud-upload fs-1 text-muted mb-2"></i>
+                    <p class="small text-muted">
+                        Drag and drop an image here or <span class="text-primary text-decoration-underline">click to choose a file</span>
+                    </p>
+                </div>
+
+             
+                <InputFile OnChange="HandleFileSelected" accept="image/*" id="fileInput" class="d-none" />
+                
+                @if (!string.IsNullOrEmpty(_currentImagePath))
+                {
+                    <div class="mt-3">
+                        <p class="small text-muted mb-2">Preview:</p>
+                        <div class="position-relative">
+                            <img src="@_currentImagePath" alt="Restaurant preview" 
+                                 class="img-fluid rounded border" style="max-height: 16rem; object-fit: cover;" />
+                            <button type="button" class="btn btn-sm btn-danger position-absolute top-0 end-0 m-2 rounded-circle"
+                                    @onclick="RemoveImage" style="width: 32px; height: 32px; padding: 0;">
+                                <i class="bi bi-x-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                }
+                
+                @if (_imageError)
+                {
+                    <div class="text-danger small mt-2">
+                        <i class="bi bi-exclamation-triangle me-1"></i>
+                        @_imageErrorMessage
+                    </div>
+                }
+            </div>
+            
+            <div class="d-flex justify-content-between mt-2">
+                <button type="submit" class="btn btn-success px-4" disabled="@_isSaving">
+                    @if (_isSaving)
+                    {
+                        <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                        <span>Saving...</span>
+                    }
+                    else
+                    {
+                        <span>✅ @(_isEditMode ? "Update" : "Add") Restaurant</span>
+                    }
+                </button>
+                <div>
+                    <button type="button" class="btn btn-outline-secondary me-2" @onclick="NavigateBack">
+                        Cancel
+                    </button>
+                    <button type="reset" class="btn btn-light">
+                        ❌ Reset
+                    </button>
+                </div>
+            </div>
+        </EditForm>
+    </div>
+</div>
+
+
+
+@code {
+    [Parameter] public Guid? Id { get; set; }
+
+    private RestaurantReq _restaurant = new();
+    private bool _isEditMode => Id.HasValue;
+    private bool _loading = true;
+    private bool _isSaving = false;
+    private bool _isDragging = false;
+    private bool _imageError = false;
+    private string _imageErrorMessage = string.Empty;
+    private string? _currentImagePath;
+    private IBrowserFile? _selectedFile;
+    private bool _isDarkMode = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _isDarkMode = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "theme") == "dark";
+        if (_isEditMode) await LoadRestaurant();
+        else _restaurant.Note = 0;
+        _loading = false;
+    }
+
+    private string GetDarkModeClass(string light, string dark) => _isDarkMode ? dark : light;
+    private string GetInputClass() => $"form-control {(GetDarkModeClass("", "bg-dark text-light border-secondary"))}";
+    private string GetDropzoneClass() => $"{(_isDarkMode ? "image-dropzone-dark" : "image-dropzone")} {(_isDragging ? "dragging" : "")}".Trim();
+    private void HandleDragEnter() => _isDragging = true;
+    private void HandleDragLeave() => _isDragging = false;
+    private async Task HandleDrop(DragEventArgs _) => await ShowToast("Drag & drop not implemented", "Info", "info");
+
+    private async Task OpenFileDialog()
+    {
+        await JSRuntime.InvokeVoidAsync("eval", "document.getElementById('fileInput').click()");
+    }
+
+    private async Task HandleFileSelected(InputFileChangeEventArgs e)
+    {
+        _imageError = false;
+        var file = e.File;
+
+        if (file.Size > 10485760)
+        {
+            _imageError = true;
+            _imageErrorMessage = "Image must not exceed 10MB";
+            return;
+        }
+
+        if (!file.ContentType.StartsWith("image/"))
+        {
+            _imageError = true;
+            _imageErrorMessage = "File must be an image";
+            return;
+        }
+
+        try
+        {
+            var buffer = new byte[file.Size];
+            await file.OpenReadStream().ReadAsync(buffer);
+            _currentImagePath = $"data:{file.ContentType};base64,{Convert.ToBase64String(buffer)}";
+            _selectedFile = file;
+        }
+        catch (Exception ex)
+        {
+            _imageError = true;
+            _imageErrorMessage = $"Error: {ex.Message}";
+        }
+    }
+
+    private void RemoveImage()
+    {
+        _currentImagePath = null;
+        _selectedFile = null;
+    }
+
+    private void SetRating(int rating) => _restaurant.Note = rating;
+    private async Task<IFormFile> ConvertToFormFile(IBrowserFile browserFile)
+    {
+        var buffer = new byte[browserFile.Size];
+        await browserFile.OpenReadStream().ReadAsync(buffer);
+        var stream = new MemoryStream(buffer);
+    
+        return new FormFile(stream, 0, stream.Length, browserFile.Name, browserFile.Name)
+        {
+            Headers = new HeaderDictionary(),
+            ContentType = browserFile.ContentType
+        };
+    }
+    private async Task HandleValidSubmit()
+    {
+        _isSaving = true;
+
+        try
+        {
+            var restaurantRequest = new RestaurantReq
+            {
+                Id = _isEditMode ? Id.Value : Guid.NewGuid(),
+                Nom = _restaurant.Nom,
+                Adresse = _restaurant.Adresse,
+                Cuisine = _restaurant.Cuisine,
+                Note = _restaurant.Note,
+                Image = _selectedFile != null ? await ConvertToFormFile(_selectedFile) : null
+            };
+
+            bool success;
+            string operation = _isEditMode ? "updated" : "added";
+    
+            if (_isEditMode)
+            {
+                success = await RestaurantService.UpdateAsync(restaurantRequest);
+            }
+            else
+            {
+                success = await RestaurantService.AddAsync(restaurantRequest);
+            }
+
+            if (success)
+            {
+                await ShowToast($"Restaurant {operation} successfully", "Success", "success");
+                NavigateBack();
+            }
+            else
+            {
+                await ShowToast($"Failed to {operation} restaurant", "Error", "error");
+            }
+        }
+        catch (Exception ex)
+        {
+            await ShowToast($"Error: {ex.Message}", "Error", "error");
+            Console.WriteLine($"Error in HandleValidSubmit: {ex}");
+        }
+        finally
+        {
+            _isSaving = false;
+        }
+    }
+
+    private async Task LoadRestaurant()
+    {
+        try
+        {
+            var restaurant = await RestaurantService.GetByIdAsync(Id!.Value);
+            if (restaurant == null)
+            {
+                await ShowToast("Restaurant not found", "Error", "error");
+                NavigateBack();
+                return;
+            }
+
+            _restaurant = new()
+            {
+                Nom = restaurant.Nom,
+                Adresse = restaurant.Adresse,
+                Cuisine = restaurant.Cuisine,
+                Note = restaurant.Note
+            };
+            _currentImagePath = restaurant.ImagePath;
+        }
+        catch (Exception ex)
+        {
+            await ShowToast($"Error loading restaurant: {ex.Message}", "Error", "error");
+        }
+    }
+
+    private void NavigateBack() => NavigationManager.NavigateTo("/index");
+
+    private async Task ShowToast(string message, string title, string type) =>
+        await JSRuntime.InvokeVoidAsync("showToast", title, message, type);
+}

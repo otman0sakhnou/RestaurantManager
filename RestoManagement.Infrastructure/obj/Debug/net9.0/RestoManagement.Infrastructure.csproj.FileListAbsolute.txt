@@ -1,0 +1,17 @@
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\bin\Debug\net9.0\RestoManagement.Infrastructure.deps.json
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\bin\Debug\net9.0\RestoManagement.Infrastructure.runtimeconfig.json
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\bin\Debug\net9.0\RestoManagement.Infrastructure.dll
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\bin\Debug\net9.0\RestoManagement.Infrastructure.pdb
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\bin\Debug\net9.0\RestoManagement.Domain.dll
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\bin\Debug\net9.0\RestoManagement.Domain.pdb
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\obj\Debug\net9.0\RestoManagement.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\obj\Debug\net9.0\RestoManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\obj\Debug\net9.0\RestoManagement.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\obj\Debug\net9.0\RestoManagement.Infrastructure.AssemblyInfo.cs
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\obj\Debug\net9.0\RestoManagement.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\obj\Debug\net9.0\RestoMan.8FCFAAD5.Up2Date
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\obj\Debug\net9.0\RestoManagement.Infrastructure.dll
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\obj\Debug\net9.0\refint\RestoManagement.Infrastructure.dll
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\obj\Debug\net9.0\RestoManagement.Infrastructure.pdb
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\obj\Debug\net9.0\RestoManagement.Infrastructure.genruntimeconfig.cache
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\obj\Debug\net9.0\ref\RestoManagement.Infrastructure.dll

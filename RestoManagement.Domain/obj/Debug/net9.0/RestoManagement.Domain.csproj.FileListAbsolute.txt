@@ -1,0 +1,12 @@
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Domain\bin\Debug\net9.0\RestoManagement.Domain.deps.json
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Domain\bin\Debug\net9.0\RestoManagement.Domain.dll
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Domain\bin\Debug\net9.0\RestoManagement.Domain.pdb
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Domain\obj\Debug\net9.0\RestoManagement.Domain.csproj.AssemblyReference.cache
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Domain\obj\Debug\net9.0\RestoManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Domain\obj\Debug\net9.0\RestoManagement.Domain.AssemblyInfoInputs.cache
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Domain\obj\Debug\net9.0\RestoManagement.Domain.AssemblyInfo.cs
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Domain\obj\Debug\net9.0\RestoManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Domain\obj\Debug\net9.0\RestoManagement.Domain.dll
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Domain\obj\Debug\net9.0\refint\RestoManagement.Domain.dll
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Domain\obj\Debug\net9.0\RestoManagement.Domain.pdb
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Domain\obj\Debug\net9.0\ref\RestoManagement.Domain.dll

@@ -1,0 +1,172 @@
+﻿@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.EntityFrameworkCore.Metadata.Internal
+@inherits LayoutComponentBase
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+@inject AuthenticationStateProvider AuthStateProvider
+
+
+<div class="@(_isDarkMode ? "bg-dark text-light" : "bg-light")">
+    <div class="scroll-indicator"></div>
+    <header class="sticky-top shadow-sm @(_isDarkMode ? "bg-dark" : "bg-white")">
+        <div class="container py-3">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <div class="d-flex align-items-center">
+                        <div class="me-3" @onclick="NavigateToIndex">
+                            <div id="lottie-container" style="width: 50px; height: 50px;"></div>
+                        </div>
+                        <div>
+                            <h1 class="fs-3 fw-bold text-success mb-0">Restaurant Manager</h1>
+                            @if (!IsAdmin)
+                            {
+                                <p class="small text-muted mb-0">Manage your culinary empire</p>
+                            }
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-md-end align-items-center">
+                        
+                        <AuthorizeView Roles="Admin">
+                            <Authorized>
+                                <a href="/index/add" class="btn btn-success d-flex align-items-center me-3">
+                                    <i class="bi bi-plus-lg me-2"></i>
+                                    Add Restaurant
+                                </a>
+                            </Authorized>
+                        </AuthorizeView>
+
+                        <AuthorizeView>
+                            <Authorized Context="authContext">
+                                <div class="dropdown">
+                                    <button class="btn @(_isDarkMode ? "btn-dark" : "btn-light") dropdown-toggle d-flex align-items-center"
+                                            type="button" id="userDropdown" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                        <div class="me-2">
+                                        </div>
+                                        <span class="d-none d-md-inline">@FormatDisplayName(authContext.User.Identity.Name)</span>
+                                    </button>
+
+                                    <ul class="dropdown-menu dropdown-menu-end @(_isDarkMode ? "dropdown-menu-dark" : "")"
+                                        aria-labelledby="userDropdown">
+                                        <li>
+                                            <div class="dropdown-header">
+                                                <div class="d-flex align-items-center">
+                                                    <div>
+                                                        <strong>@FormatDisplayName(authContext.User.Identity.Name)</strong>
+                                                        <div class="small text-muted">@authContext.User.Identity.Name</div>
+                                                        @if (authContext.User.IsInRole("Admin"))
+                                                        {
+                                                            <span class="badge bg-danger mt-1">Admin</span>
+                                                        }
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><button class="dropdown-item text-danger" @onclick="LogoutUser">
+                                                <i class="bi bi-box-arrow-right me-2"></i>Logout
+                                            </button></li>
+                                    </ul>
+                                </div>
+                            </Authorized>
+                            <NotAuthorized>
+                                <a href="/login" class="btn btn-outline-success">
+                                    <i class="bi bi-box-arrow-in-right me-2"></i>Login
+                                </a>
+                            </NotAuthorized>
+                        </AuthorizeView>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container py-4">
+        <main role="main">
+            @Body
+        </main>
+    </div>
+
+    <footer class="border-top py-4 @(_isDarkMode ? "bg-dark text-light" : "bg-white")">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="text-muted">
+                    &copy; 2025 - Restaurant Manager - <a href="/privacy" class="text-decoration-none text-success">Privacy</a>
+                </div>
+                <div>
+                    <AuthorizeView>
+                        <Authorized Context="authContext">
+        <span class="text-muted small">
+            Logged in as <span class="text-success">@FormatDisplayName(authContext.User.Identity.Name)</span>
+        </span>
+                        </Authorized>
+                    </AuthorizeView>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+@code {
+    private bool _isDarkMode;
+    private bool _isAuthenticated;
+    
+    private bool IsAdmin = false;
+    protected override async Task OnInitializedAsync()
+    {
+        _isDarkMode = await GetThemePreference();
+        await InitializeScrollIndicator();
+        await InitializeLottiePlayer();
+       
+        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        _isAuthenticated = authState.User.Identity?.IsAuthenticated ?? false;
+        
+        if (!_isAuthenticated && !NavigationManager.Uri.EndsWith("/login"))
+        {
+            NavigationManager.NavigateTo("/login");
+        }
+    }
+    private void NavigateToIndex()
+    {
+        NavigationManager.NavigateTo("/index");
+    }
+
+    private async Task<bool> GetThemePreference()
+    {
+        var theme = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "theme");
+        return theme == "dark";
+    }
+    private async Task InitializeScrollIndicator()
+    {
+        await JSRuntime.InvokeVoidAsync("initScrollIndicator");
+    }
+
+    private async Task InitializeLottiePlayer()
+    {
+        await JSRuntime.InvokeVoidAsync("initLottiePlayer");
+    }
+    private string FormatDisplayName(string email)
+    {
+        if (string.IsNullOrEmpty(email))
+            return "User";
+        
+        var username = email.Split('@')[0];
+        
+        username = username.Replace('.', ' ').Replace('_', ' ');
+        
+        username = System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(username);
+    
+        return username;
+    }
+    
+    private void LogoutUser()
+    {
+         JSRuntime.InvokeVoidAsync("localStorage.removeItem", "authToken");
+         JSRuntime.InvokeVoidAsync("localStorage.removeItem", "userEmail");
+         JSRuntime.InvokeVoidAsync("localStorage.removeItem", "userRoles");
+         NavigationManager.NavigateTo("/login");
+    }
+}

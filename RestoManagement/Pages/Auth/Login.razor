@@ -1,0 +1,242 @@
+@page "/"
+@page "/login"
+@layout AuthLayout
+@using System.Text.Json
+@using Microsoft.AspNetCore.Components.Authorization
+@using RestoManagement.Contracts
+@using RestoManagement.Domain.DTOs
+@using RestoManagement.Services
+@inject IAuthService AuthService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+@inject AuthenticationStateProvider AuthStateProvider
+
+<div class="auth-container">
+    <div class="auth-background">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-11 col-lg-10 col-xl-8">
+                <div class="auth-card">
+                    <div class="row g-0">
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <div class="auth-image">
+                                <div class="overlay"></div>
+                                <div class="brand-wrapper">
+                                    <div class="logo-container">
+                                        <i class="bi bi-cup-hot-fill"></i>
+                                    </div>
+                                    <h2 class="brand-name">Resto<span>Hub</span></h2>
+                                    <p class="brand-tagline">Restaurant Management Simplified</p>
+                                    
+                                    <div class="features-list">
+                                        <div class="feature-item">
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            <span>Streamlined Ordering</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            <span>Inventory Management</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            <span>Staff Scheduling</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            <span>Real-time Analytics</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="auth-form-wrapper">
+                                <div class="d-block d-lg-none text-center mb-4">
+                                    <div class="logo-container-sm">
+                                        <i class="bi bi-cup-hot-fill"></i>
+                                    </div>
+                                    <h2 class="brand-name-sm">Resto<span>Management</span></h2>
+                                </div>
+                                
+                                <div class="auth-header">
+                                    <h3>Welcome Back</h3>
+                                    <p class="text-muted">Sign in to your account</p>
+                                </div>
+
+                                <EditForm Model="@loginDto" OnValidSubmit="@HandleLogin" OnInvalidSubmit="()=>showValidationSummary=true" class="auth-form">
+                                    <DataAnnotationsValidator />
+                                    
+                                    @if (showValidationSummary)
+                                    {
+                                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                            <div class="d-flex">
+                                                <div class="alert-icon">
+                                                    <i class="bi bi-exclamation-triangle-fill"></i>
+                                                </div>
+                                                <div>
+                                                    <ValidationSummary />
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn-close" @onclick="() => showValidationSummary = false"></button>
+                                        </div>
+                                    }
+                                    @if (!string.IsNullOrWhiteSpace(loginErrorMessage))
+                                    {
+                                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                            <div class="d-flex">
+                                                <div class="alert-icon">
+                                                    <i class="bi bi-exclamation-triangle-fill"></i>
+                                                </div>
+                                                <div>@loginErrorMessage</div>
+                                            </div>
+                                            <button type="button" class="btn-close" @onclick="() => loginErrorMessage = string.Empty"></button>
+                                        </div>
+                                    }
+
+                                    <div class="form-floating mb-4">
+                                        <InputText id="Email" @bind-Value="loginDto.Email" type="email" 
+                                            class="form-control" 
+                                            placeholder="Email address" />
+                                        <label for="Email">
+                                            <i class="bi bi-envelope me-2"></i>Email address
+                                        </label>
+                                        <ValidationMessage For="@(() => loginDto.Email)" class="invalid-feedback" />
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <InputText id="Password" @bind-Value="loginDto.Password" 
+                                            type="@(showPassword ? "text" : "password")" 
+                                            class="form-control"
+                                            autocomplete="off"
+                                            placeholder="Password" />
+                                        <label for="Password">
+                                            <i class="bi bi-lock me-2"></i>Password
+                                        </label>
+                                        <button type="button" class="password-toggle" @onclick="TogglePasswordVisibility">
+                                            <i class="bi @(showPassword ? "bi-eye-slash" : "bi-eye")"></i>
+                                        </button>
+                                        <ValidationMessage For="@(() => loginDto.Password)" class="invalid-feedback" />
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="rememberMe" @bind="rememberMe">
+                                            <label class="form-check-label" for="rememberMe">
+                                                Remember me
+                                            </label>
+                                        </div>
+                                        <a href="/forgot-password" class="text-primary small">Forgot password?</a>
+                                    </div>
+
+                                    <div class="d-grid mb-4">
+                                        <button type="submit" class="btn btn-success btn-lg auth-btn">
+                                            @if (isLoggingIn)
+                                            {
+                                                <div class="spinner">
+                                                    <div class="bounce1"></div>
+                                                    <div class="bounce2"></div>
+                                                    <div class="bounce3"></div>
+                                                </div>
+                                                <span>Signing In...</span>
+                                            }
+                                            else
+                                            {
+                                                <span>Sign In</span>
+                                                <i class="bi bi-box-arrow-in-right ms-2"></i>
+                                            }
+                                        </button>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <p class="mb-0">
+                                            Don't have an account? 
+                                            <a href="/register" class="text-primary fw-bold">Create Account</a>
+                                        </p>
+                                    </div>
+                                </EditForm>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="auth-footer">
+                    <div class="row">
+                        <div class="col-md-6 text-md-end">
+                            <div class="d-flex align-items-center justify-content-md-end">
+                                <span>© 2025 RestoManagement. All rights reserved.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private LoginDto loginDto = new LoginDto
+    {
+        Email = string.Empty,
+        Password = string.Empty
+    };
+
+    private bool showValidationSummary = false;
+    private bool isLoggingIn = false;
+    private bool showPassword = false;
+    private bool rememberMe = false;
+    private string loginErrorMessage = string.Empty;
+
+
+    private async Task HandleLogin()
+    {
+        try
+        {
+            isLoggingIn = true;
+            await Task.Delay(1500);
+            var response = await AuthService.LoginAsync(loginDto);
+            
+            await JSRuntime.InvokeVoidAsync("showToast", "Success!", "You have been logged in successfully.");
+            await JSRuntime.InvokeVoidAsync("localStorage.setItem", "authToken", response.Token);
+            await JSRuntime.InvokeVoidAsync("localStorage.setItem", "userEmail", response.Email);
+            await JSRuntime.InvokeVoidAsync("localStorage.setItem", "userRoles", JsonSerializer.Serialize(response.Roles));
+            Console.WriteLine("Res from login",response);
+            
+            if (response !=null && AuthStateProvider is CustomAuthStateProvider customAuthProvider)
+            {
+                Console.WriteLine("Res from AuthStateProvider",response);
+                customAuthProvider.NotifyUserAuthentication(response);
+            }
+
+           
+
+            NavigationManager.NavigateTo("/index");
+        }
+        catch (ApplicationException ex)
+        {
+            loginErrorMessage = ex.Message;
+            Console.WriteLine("Login failed: " + loginErrorMessage);
+            await JSRuntime.InvokeVoidAsync("showToast", "Erreur", loginErrorMessage, "error");
+        }
+        catch (Exception ex)
+        {
+            loginErrorMessage = "Une erreur inattendue est survenue.";
+            Console.WriteLine("Unexpected error: " + ex.Message);
+            await JSRuntime.InvokeVoidAsync("showToast", "Erreur", loginErrorMessage, "error");
+        }
+        finally
+        {
+            isLoggingIn = false;
+        }
+    }
+
+    private void TogglePasswordVisibility()
+    {
+        showPassword = !showPassword;
+    }
+}

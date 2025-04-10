@@ -1,0 +1,11 @@
+@inject NavigationManager Navigation
+@inject IJSRuntime JSRuntime
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        // Clear any existing auth state
+        await JSRuntime.InvokeVoidAsync("localStorage.removeItem", "authToken");
+        Navigation.NavigateTo("/login");
+    }
+}

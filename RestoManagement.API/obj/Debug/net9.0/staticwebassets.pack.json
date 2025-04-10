@@ -1,0 +1,73 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\336a646b-5dc1-4d95-a905-ee972efe5bc6.jpg",
+      "PackagePath": "staticwebassets\\images\\336a646b-5dc1-4d95-a905-ee972efe5bc6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\42a5b25f-1358-4f0b-afc8-925c87bb0197.jpg",
+      "PackagePath": "staticwebassets\\images\\42a5b25f-1358-4f0b-afc8-925c87bb0197.jpg"
+    },
+    {
+      "Id": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\5aae21a4-74bf-4030-a4ec-4e7b52c65ec5.jpg",
+      "PackagePath": "staticwebassets\\images\\5aae21a4-74bf-4030-a4ec-4e7b52c65ec5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\61c1bb20-8936-4049-acc3-afd63d22ceea.jpg",
+      "PackagePath": "staticwebassets\\images\\61c1bb20-8936-4049-acc3-afd63d22ceea.jpg"
+    },
+    {
+      "Id": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\663a1854-821d-4ccf-bf57-a1c09757f233.jpg",
+      "PackagePath": "staticwebassets\\images\\663a1854-821d-4ccf-bf57-a1c09757f233.jpg"
+    },
+    {
+      "Id": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\95686674-e1f9-4dbf-97c8-b54664caebe5.jpg",
+      "PackagePath": "staticwebassets\\images\\95686674-e1f9-4dbf-97c8-b54664caebe5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\a1e1ec4a-b6eb-413e-a142-d92baffa4187.jpg",
+      "PackagePath": "staticwebassets\\images\\a1e1ec4a-b6eb-413e-a142-d92baffa4187.jpg"
+    },
+    {
+      "Id": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\a5906424-84f2-4965-9c9f-da50cfb0b478.jpg",
+      "PackagePath": "staticwebassets\\images\\a5906424-84f2-4965-9c9f-da50cfb0b478.jpg"
+    },
+    {
+      "Id": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\c8c0f0cc-81be-47ad-8ba2-06906b8eeb9e.jpg",
+      "PackagePath": "staticwebassets\\images\\c8c0f0cc-81be-47ad-8ba2-06906b8eeb9e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\d9be43a1-1cfd-4e0e-8981-d669424d8726.jpg",
+      "PackagePath": "staticwebassets\\images\\d9be43a1-1cfd-4e0e-8981-d669424d8726.jpg"
+    },
+    {
+      "Id": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\dce8435d-f0d8-4356-88a8-23a45efb5a79.jpg",
+      "PackagePath": "staticwebassets\\images\\dce8435d-f0d8-4356-88a8-23a45efb5a79.jpg"
+    },
+    {
+      "Id": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\ff24f829-857d-490e-adbc-708fbadbc488.jpg",
+      "PackagePath": "staticwebassets\\images\\ff24f829-857d-490e-adbc-708fbadbc488.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.RestoManagement.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.RestoManagement.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.RestoManagement.API.props",
+      "PackagePath": "build\\RestoManagement.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.RestoManagement.API.props",
+      "PackagePath": "buildMultiTargeting\\RestoManagement.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.RestoManagement.API.props",
+      "PackagePath": "buildTransitive\\RestoManagement.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

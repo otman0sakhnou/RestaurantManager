@@ -1,0 +1,288 @@
+@page "/register"
+@layout AuthLayout
+@using RestoManagement.Contracts
+@using RestoManagement.Domain.DTOs
+@inject IAuthService AuthService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+
+<div class="auth-container">
+    <div class="auth-background">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-11 col-lg-10 col-xl-8">
+                <div class="auth-card">
+                    <div class="row g-0">
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <div class="auth-image">
+                                <div class="overlay"></div>
+                                <div class="brand-wrapper">
+                                    <div class="logo-container">
+                                        <i class="bi bi-cup-hot-fill"></i>
+                                    </div>
+                                    <h2 class="brand-name">Resto<span>Hub</span></h2>
+                                    <p class="brand-tagline">Restaurant Management Simplified</p>
+
+                                    <div class="features-list">
+                                        <div class="feature-item">
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            <span>Streamlined Ordering</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            <span>Inventory Management</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            <span>Staff Scheduling</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <i class="bi bi-check-circle-fill"></i>
+                                            <span>Real-time Analytics</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="auth-form-wrapper">
+                                <div class="d-block d-lg-none text-center mb-4">
+                                    <div class="logo-container-sm">
+                                        <i class="bi bi-cup-hot-fill"></i>
+                                    </div>
+                                    <h2 class="brand-name-sm">Resto<span>Hub</span></h2>
+                                </div>
+
+                                <div class="auth-header">
+                                    <h3>Create Your Account</h3>
+                                    <p class="text-muted">Get started with RestoHub today</p>
+                                </div>
+
+                                <EditForm Model="@registerDto" OnValidSubmit="@HandleRegister" OnInvalidSubmit="() => showValidationSummary = true">
+                                    <DataAnnotationsValidator />
+
+                                    @if (showValidationSummary)
+                                    {
+                                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                            <div class="d-flex">
+                                                <div class="alert-icon">
+                                                    <i class="bi bi-exclamation-triangle-fill"></i>
+                                                </div>
+                                                <div>
+                                                    <ValidationSummary />
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn-close" @onclick="() => showValidationSummary = false"></button>
+                                        </div>
+                                    }
+
+                                    <div class="form-floating mb-4">
+                                        <InputText id="Email" @bind-Value="registerDto.Email" type="email"
+                                                   class="@GetEmailClass()"
+                                                   placeholder="Email address"
+                                                   @oninput="ValidateEmail"
+                                                   @onblur="MarkEmailTouched" />
+                                        <label for="Email">
+                                            <i class="bi bi-envelope me-2"></i>Email address
+                                        </label>
+                                        <ValidationMessage For="@(() => registerDto.Email)" class="invalid-feedback" />
+                                        @if (EmailValid)
+                                        {
+                                            <div class="valid-feedback">Looks good!</div>
+                                        }
+                                    </div>
+
+                                    <div class="form-floating mb-4">
+                                        <InputText id="Password" @bind-Value="registerDto.Password"
+                                                   type="@(showPassword ? "text" : "password")"
+                                                   class="@GetPasswordClass()"
+                                                   placeholder="Password"
+                                                   @oninput="CheckPasswordStrength" />
+                                        <label for="Password">
+                                            <i class="bi bi-lock me-2"></i>Password
+                                        </label>
+                                        <button type="button" class="password-toggle" @onclick="TogglePasswordVisibility">
+                                            <i class="bi @(showPassword ? "bi-eye-slash" : "bi-eye")"></i>
+                                        </button>
+                                        <ValidationMessage For="@(() => registerDto.Password)" class="invalid-feedback" />
+                                        @if (!string.IsNullOrEmpty(registerDto.Password))
+                                        {
+                                            <div class="password-strength mt-2">
+                                                <div class="strength-meter">
+                                                    <div class="strength-meter-fill bg-@GetPasswordStrengthClass()"
+                                                         style="width: @(PasswordStrength * 25)%"></div>
+                                                </div>
+                                                <small class="text-@GetPasswordStrengthClass()">
+                                                    @GetPasswordStrengthText()
+                                                </small>
+                                            </div>
+                                        }
+                                    </div>
+
+                                    <div class="form-floating mb-4">
+                                        <InputSelect id="Role" @bind-Value="registerDto.Role"
+                                                     class="@GetRoleClass()">
+                                            <option value="">Select your role</option>
+                                            <option value="Admin">Admin</option>
+                                            <option value="Manager">Manager</option>
+                                            <option value="User">User</option>
+                                        </InputSelect>
+                                        <label for="Role">
+                                            <i class="bi bi-person-badge me-2"></i>Your Role
+                                        </label>
+                                        <ValidationMessage For="@(() => registerDto.Role)" class="invalid-feedback" />
+                                    </div>
+
+                                    <div class="d-grid mb-4">
+                                        <button type="submit" class="btn  btn-success btn-lg">
+                                            @if (isRegistering)
+                                            {
+                                                <div class="spinner">
+                                                    <div class="bounce1"></div>
+                                                    <div class="bounce2"></div>
+                                                    <div class="bounce3"></div>
+                                                </div>
+                                                <span>Creating Account...</span>
+                                            }
+                                            else
+                                            {
+                                                <span>Create Account</span>
+                                                <i class="bi bi-arrow-right ms-2"></i>
+                                            }
+                                        </button>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <p class="mb-0">
+                                            Already have an account?
+                                            <a href="/login" class="text-primary fw-bold">Sign In</a>
+                                        </p>
+                                    </div>
+                                </EditForm>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="auth-footer">
+                    <div class="row">
+                        <div class="col-md-6 text-md-end">
+                            <div class="d-flex align-items-center justify-content-md-end">
+                                <span>© 2025 RestoManagement. All rights reserved.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private RegisterDto registerDto = new RegisterDto
+    {
+        Email = string.Empty,
+        Password = string.Empty,
+        Role = string.Empty
+    };
+
+    private bool showValidationSummary = false;
+    private bool isRegistering = false;
+    private bool showPassword = false;
+    private bool EmailTouched = false;
+    private bool EmailValid = false;
+    private int PasswordStrength = 0;
+
+    private async Task HandleRegister()
+    {
+        try
+        {
+            isRegistering = true;
+            await Task.Delay(1500);
+            var response = await AuthService.RegisterAsync(registerDto);
+            await JSRuntime.InvokeVoidAsync("showToast", "Success!", "Your account has been created successfully.");
+            NavigationManager.NavigateTo("/login");
+        }
+        catch (Exception ex)
+        {
+            showValidationSummary = true;
+            Console.WriteLine(ex.Message);
+            await JSRuntime.InvokeVoidAsync("showToast", "Error", ex.Message, "error");
+        }
+        finally
+        {
+            isRegistering = false;
+        }
+    }
+
+    private void TogglePasswordVisibility() => showPassword = !showPassword;
+
+    private void ValidateEmail()
+    {
+        EmailValid = !string.IsNullOrEmpty(registerDto.Email) &&
+                     registerDto.Email.Contains("@") &&
+                     registerDto.Email.Contains(".");
+    }
+
+    private void MarkEmailTouched() => EmailTouched = true;
+
+    private string GetEmailClass()
+    {
+        var baseClass = "form-control";
+        if (EmailValid) return $"{baseClass} is-valid";
+        if (EmailTouched) return $"{baseClass} is-invalid";
+        return baseClass;
+    }
+
+    private string GetPasswordClass()
+    {
+        var baseClass = "form-control";
+        return PasswordStrength > 0 ? $"{baseClass} border-{GetPasswordStrengthClass()}" : baseClass;
+    }
+
+    private string GetRoleClass()
+    {
+        var baseClass = "form-select";
+        return !string.IsNullOrEmpty(registerDto.Role) ? $"{baseClass} is-valid" : baseClass;
+    }
+
+    private void CheckPasswordStrength()
+    {
+        if (string.IsNullOrEmpty(registerDto.Password))
+        {
+            PasswordStrength = 0;
+            return;
+        }
+
+        PasswordStrength = 1;
+        if (registerDto.Password.Length >= 8) PasswordStrength = 2;
+        if (registerDto.Password.Any(char.IsUpper) || registerDto.Password.Any(char.IsDigit)) PasswordStrength = 3;
+        if (registerDto.Password.Any(char.IsUpper) && registerDto.Password.Any(char.IsDigit) && registerDto.Password.Any(c => !char.IsLetterOrDigit(c))) PasswordStrength = 4;
+    }
+
+    private string GetPasswordStrengthClass() => PasswordStrength switch
+    {
+        1 => "danger",
+        2 => "warning",
+        3 => "info",
+        4 => "success",
+        _ => ""
+    };
+
+    private string GetPasswordStrengthText() => PasswordStrength switch
+    {
+        1 => "Weak - Add more characters",
+        2 => "Fair - Add uppercase letters or numbers",
+        3 => "Good - Add special characters",
+        4 => "Strong password",
+        _ => ""
+    };
+}

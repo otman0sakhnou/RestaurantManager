@@ -1,0 +1,17 @@
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\bin\Debug\net9.0\RestoManagement.Application.deps.json
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\bin\Debug\net9.0\RestoManagement.Application.dll
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\bin\Debug\net9.0\RestoManagement.Application.pdb
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\bin\Debug\net9.0\RestoManagement.Domain.dll
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\bin\Debug\net9.0\RestoManagement.Infrastructure.dll
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\bin\Debug\net9.0\RestoManagement.Infrastructure.pdb
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\bin\Debug\net9.0\RestoManagement.Domain.pdb
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\obj\Debug\net9.0\RestoManagement.Application.csproj.AssemblyReference.cache
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\obj\Debug\net9.0\RestoManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\obj\Debug\net9.0\RestoManagement.Application.AssemblyInfoInputs.cache
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\obj\Debug\net9.0\RestoManagement.Application.AssemblyInfo.cs
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\obj\Debug\net9.0\RestoManagement.Application.csproj.CoreCompileInputs.cache
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\obj\Debug\net9.0\RestoMan.EBF7E1F6.Up2Date
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\obj\Debug\net9.0\RestoManagement.Application.dll
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\obj\Debug\net9.0\refint\RestoManagement.Application.dll
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\obj\Debug\net9.0\RestoManagement.Application.pdb
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\obj\Debug\net9.0\ref\RestoManagement.Application.dll

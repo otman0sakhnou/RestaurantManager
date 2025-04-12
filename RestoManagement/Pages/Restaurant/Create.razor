@@ -84,14 +84,15 @@
 
              
                 <InputFile OnChange="HandleFileSelected" accept="image/*" id="fileInput" class="d-none" />
-                
+
                 @if (!string.IsNullOrEmpty(_currentImagePath))
                 {
                     <div class="mt-3">
                         <p class="small text-muted mb-2">Preview:</p>
                         <div class="position-relative">
-                            <img src="@_currentImagePath" alt="Restaurant preview" 
-                                 class="img-fluid rounded border" style="max-height: 16rem; object-fit: cover;" />
+                            <img src="@_currentImagePath" alt="Restaurant preview"
+                                 class="img-fluid rounded border" style="max-height: 16rem; object-fit: cover;"
+                                 onerror="this.src='https://source.unsplash.com/400x250/?restaurant,food'" />
                             <button type="button" class="btn btn-sm btn-danger position-absolute top-0 end-0 m-2 rounded-circle"
                                     @onclick="RemoveImage" style="width: 32px; height: 32px; padding: 0;">
                                 <i class="bi bi-x-lg"></i>
@@ -99,12 +100,19 @@
                         </div>
                     </div>
                 }
-                
+
                 @if (_imageError)
                 {
                     <div class="text-danger small mt-2">
                         <i class="bi bi-exclamation-triangle me-1"></i>
                         @_imageErrorMessage
+                    </div>
+                }
+                else if (!string.IsNullOrEmpty(_currentImagePath) && !_imageUrlCache.ContainsValue(_currentImagePath))
+                {
+                    <div class="text-warning small mt-2">
+                        <i class="bi bi-exclamation-triangle me-1"></i>
+                        Image could not be loaded
                     </div>
                 }
             </div>
@@ -149,6 +157,7 @@
     private string? _currentImagePath;
     private IBrowserFile? _selectedFile;
     private bool _isDarkMode = false;
+    private Dictionary<string, string> _imageUrlCache = new Dictionary<string, string>();
 
     protected override async Task OnInitializedAsync()
     {
@@ -290,7 +299,11 @@
                 Cuisine = restaurant.Cuisine,
                 Note = restaurant.Note
             };
-            _currentImagePath = restaurant.ImagePath;
+            if (!string.IsNullOrEmpty(restaurant.ImagePath))
+            {
+                _imageUrlCache[restaurant.ImagePath] = await RestaurantService.GetImageUrlAsync(restaurant.ImagePath);
+                _currentImagePath = _imageUrlCache[restaurant.ImagePath];
+            }
         }
         catch (Exception ex)
         {

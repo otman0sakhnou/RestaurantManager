@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BefJpuRvoiYhdJswxu1jqNt46NIaExfpbS+sXWG3dAg=",
+  "Hash": "s7BLfmRts/Qkv7o1fcDU/iv3ZXUXI17KUHDo2dN7MyI=",
   "Source": "RestoManagement.API",
   "BasePath": "_content/RestoManagement.API",
   "Mode": "Default",
@@ -16,6 +16,27 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\0e14b127-0e22-4b26-8615-774cd2e1d554.jpeg",
+      "SourceId": "RestoManagement.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\",
+      "BasePath": "_content/RestoManagement.API",
+      "RelativePath": "images/0e14b127-0e22-4b26-8615-774cd2e1d554#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "liplo2b2cf",
+      "Integrity": "bQTmYDi0FjBHmnMuW9ILqE89SApCTFamWvjkHSOOFrk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\0e14b127-0e22-4b26-8615-774cd2e1d554.jpeg"
+    },
     {
       "Identity": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\336a646b-5dc1-4d95-a905-ee972efe5bc6.jpg",
       "SourceId": "RestoManagement.API",
@@ -122,6 +143,27 @@
       "OriginalItemSpec": "wwwroot\\images\\663a1854-821d-4ccf-bf57-a1c09757f233.jpg"
     },
     {
+      "Identity": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\81cae50d-3808-4244-8d4a-800ec19cfd62.webp",
+      "SourceId": "RestoManagement.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\",
+      "BasePath": "_content/RestoManagement.API",
+      "RelativePath": "images/81cae50d-3808-4244-8d4a-800ec19cfd62#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ynh3d2kz8o",
+      "Integrity": "LvFcbt3R23c3b1Ma7UpRwhWyc2qWlyiAHNU68kvwBvI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\81cae50d-3808-4244-8d4a-800ec19cfd62.webp"
+    },
+    {
       "Identity": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\95686674-e1f9-4dbf-97c8-b54664caebe5.jpg",
       "SourceId": "RestoManagement.API",
       "SourceType": "Discovered",
@@ -183,6 +225,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\a5906424-84f2-4965-9c9f-da50cfb0b478.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\a9b1fefc-b375-4232-9fe1-f847ee52d177.webp",
+      "SourceId": "RestoManagement.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\",
+      "BasePath": "_content/RestoManagement.API",
+      "RelativePath": "images/a9b1fefc-b375-4232-9fe1-f847ee52d177#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6011g6es07",
+      "Integrity": "qnyXK06c3iKO8+FlzSAt3xrQ1Yi47s0D1c5XVJH3H3U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\a9b1fefc-b375-4232-9fe1-f847ee52d177.webp"
     },
     {
       "Identity": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\c8c0f0cc-81be-47ad-8ba2-06906b8eeb9e.jpg",
@@ -248,6 +311,27 @@
       "OriginalItemSpec": "wwwroot\\images\\dce8435d-f0d8-4356-88a8-23a45efb5a79.jpg"
     },
     {
+      "Identity": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\ec474411-3c30-4fb1-bbbc-2d5e878d9be9.webp",
+      "SourceId": "RestoManagement.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\",
+      "BasePath": "_content/RestoManagement.API",
+      "RelativePath": "images/ec474411-3c30-4fb1-bbbc-2d5e878d9be9#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "phywjjopb2",
+      "Integrity": "nVWJJYJpexs3arQSGMPT7HELzY5B5Cs6a/ybc04PdUo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ec474411-3c30-4fb1-bbbc-2d5e878d9be9.webp"
+    },
+    {
       "Identity": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\ff24f829-857d-490e-adbc-708fbadbc488.jpg",
       "SourceId": "RestoManagement.API",
       "SourceType": "Discovered",
@@ -270,6 +354,88 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "images/0e14b127-0e22-4b26-8615-774cd2e1d554.jpeg",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\0e14b127-0e22-4b26-8615-774cd2e1d554.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50855"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bQTmYDi0FjBHmnMuW9ILqE89SApCTFamWvjkHSOOFrk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 21:20:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bQTmYDi0FjBHmnMuW9ILqE89SApCTFamWvjkHSOOFrk="
+        }
+      ]
+    },
+    {
+      "Route": "images/0e14b127-0e22-4b26-8615-774cd2e1d554.liplo2b2cf.jpeg",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\0e14b127-0e22-4b26-8615-774cd2e1d554.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50855"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bQTmYDi0FjBHmnMuW9ILqE89SApCTFamWvjkHSOOFrk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 21:20:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "liplo2b2cf"
+        },
+        {
+          "Name": "label",
+          "Value": "images/0e14b127-0e22-4b26-8615-774cd2e1d554.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bQTmYDi0FjBHmnMuW9ILqE89SApCTFamWvjkHSOOFrk="
+        }
+      ]
+    },
     {
       "Route": "images/336a646b-5dc1-4d95-a905-ee972efe5bc6.jpg",
       "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\336a646b-5dc1-4d95-a905-ee972efe5bc6.jpg",
@@ -681,6 +847,88 @@
       ]
     },
     {
+      "Route": "images/81cae50d-3808-4244-8d4a-800ec19cfd62.webp",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\81cae50d-3808-4244-8d4a-800ec19cfd62.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "98462"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LvFcbt3R23c3b1Ma7UpRwhWyc2qWlyiAHNU68kvwBvI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 21:15:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LvFcbt3R23c3b1Ma7UpRwhWyc2qWlyiAHNU68kvwBvI="
+        }
+      ]
+    },
+    {
+      "Route": "images/81cae50d-3808-4244-8d4a-800ec19cfd62.ynh3d2kz8o.webp",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\81cae50d-3808-4244-8d4a-800ec19cfd62.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "98462"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LvFcbt3R23c3b1Ma7UpRwhWyc2qWlyiAHNU68kvwBvI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 21:15:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ynh3d2kz8o"
+        },
+        {
+          "Name": "label",
+          "Value": "images/81cae50d-3808-4244-8d4a-800ec19cfd62.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LvFcbt3R23c3b1Ma7UpRwhWyc2qWlyiAHNU68kvwBvI="
+        }
+      ]
+    },
+    {
       "Route": "images/95686674-e1f9-4dbf-97c8-b54664caebe5.jpg",
       "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\95686674-e1f9-4dbf-97c8-b54664caebe5.jpg",
       "Selectors": [],
@@ -927,6 +1175,88 @@
       ]
     },
     {
+      "Route": "images/a9b1fefc-b375-4232-9fe1-f847ee52d177.6011g6es07.webp",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\a9b1fefc-b375-4232-9fe1-f847ee52d177.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32174"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qnyXK06c3iKO8+FlzSAt3xrQ1Yi47s0D1c5XVJH3H3U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 22:11:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6011g6es07"
+        },
+        {
+          "Name": "label",
+          "Value": "images/a9b1fefc-b375-4232-9fe1-f847ee52d177.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qnyXK06c3iKO8+FlzSAt3xrQ1Yi47s0D1c5XVJH3H3U="
+        }
+      ]
+    },
+    {
+      "Route": "images/a9b1fefc-b375-4232-9fe1-f847ee52d177.webp",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\a9b1fefc-b375-4232-9fe1-f847ee52d177.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32174"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qnyXK06c3iKO8+FlzSAt3xrQ1Yi47s0D1c5XVJH3H3U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 22:11:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qnyXK06c3iKO8+FlzSAt3xrQ1Yi47s0D1c5XVJH3H3U="
+        }
+      ]
+    },
+    {
       "Route": "images/c8c0f0cc-81be-47ad-8ba2-06906b8eeb9e.jpg",
       "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\c8c0f0cc-81be-47ad-8ba2-06906b8eeb9e.jpg",
       "Selectors": [],
@@ -1169,6 +1499,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-s1rBYOp7yXwcJtFMdGDcy3qMQlJ7LV0bPCg3kuzWG7g="
+        }
+      ]
+    },
+    {
+      "Route": "images/ec474411-3c30-4fb1-bbbc-2d5e878d9be9.phywjjopb2.webp",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\ec474411-3c30-4fb1-bbbc-2d5e878d9be9.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32568"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nVWJJYJpexs3arQSGMPT7HELzY5B5Cs6a/ybc04PdUo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 22:15:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "phywjjopb2"
+        },
+        {
+          "Name": "label",
+          "Value": "images/ec474411-3c30-4fb1-bbbc-2d5e878d9be9.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nVWJJYJpexs3arQSGMPT7HELzY5B5Cs6a/ybc04PdUo="
+        }
+      ]
+    },
+    {
+      "Route": "images/ec474411-3c30-4fb1-bbbc-2d5e878d9be9.webp",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.API\\wwwroot\\images\\ec474411-3c30-4fb1-bbbc-2d5e878d9be9.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32568"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nVWJJYJpexs3arQSGMPT7HELzY5B5Cs6a/ybc04PdUo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 22:15:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nVWJJYJpexs3arQSGMPT7HELzY5B5Cs6a/ybc04PdUo="
         }
       ]
     },

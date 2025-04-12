@@ -270,7 +270,7 @@
     private bool HasError = false;
     private string ErrorMessage = "";
     private bool IsAdmin = false;
-
+    private Dictionary<string, string> _imageUrlCache = new Dictionary<string, string>();
     private int CurrentPage = 1;
     private int PageSize = 6;
     private int TotalPages => (int)Math.Ceiling(FilteredRestaurants.Count() / (double)PageSize);
@@ -293,6 +293,10 @@
             StateHasChanged();
 
             Restaurants = await restaurantService.GetAllAsync();
+            foreach (var restaurant in Restaurants.Where(r => !string.IsNullOrEmpty(r.ImagePath)))
+            {
+                _imageUrlCache[restaurant.ImagePath] = await restaurantService.GetImageUrlAsync(restaurant.ImagePath);
+            }
 
             Cuisines = Restaurants.Select(r => r.Cuisine).Where(c => !string.IsNullOrEmpty(c)).Distinct().OrderBy(c => c).ToList();
 
@@ -316,10 +320,8 @@
         if (string.IsNullOrEmpty(imagePath))
             return string.Empty;
 
-        // Construire l'URL complète en utilisant le baseAddress du HttpClient
-        return $"{Http.BaseAddress}{imagePath}";
+        return _imageUrlCache.TryGetValue(imagePath, out var url) ? url : string.Empty;
     }
-
     private void FilterRestaurants()
     {
         FilteredRestaurants = Restaurants;

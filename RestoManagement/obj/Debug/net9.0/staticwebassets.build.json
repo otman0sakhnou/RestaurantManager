@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "adXxd0/SIKTlkIIDHadIFdxxMLYXzYB4aKG0Jzj08X8=",
+  "Hash": "f6tDnOy575Du9/JiK86bGNe/6P+uZ6oB9nt1yxhzbC4=",
   "Source": "RestoManagement",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "clnsbzemh3",
-      "Integrity": "cB2sNbIISQJIThVsMDNHQVpYmrGuPVZcZ5OgtLvwUIA=",
+      "Fingerprint": "i7nvqxknd6",
+      "Integrity": "PgXaTY+NWN8Y8/9BnW/9tkAtUIVSmSLTcAKiRnJNCAo=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -1585,8 +1585,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "9vzluxitcn",
-      "Integrity": "K/UrGgyv2yqEzFDpgj9GQG7agKIbbVN9sw4c8Hs9bkE=",
+      "Fingerprint": "acq20r431i",
+      "Integrity": "2j0h3LY+4ecyJd07c20K7oSn8ElahfHKjpyGvW6688A=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement.Domain\\bin\\Debug\\net9.0\\RestoManagement.Domain.pdb"
@@ -1606,8 +1606,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "6mj4k2bltl",
-      "Integrity": "svfkE8hu9syrfohu1+jYEkvyMQSe/hgC1WYpMXG3UlM=",
+      "Fingerprint": "11h6sgutfw",
+      "Integrity": "tZf8XnNTG59nGjv+Gxx/TeOi1nSQM1IPMYthTG2F1nQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\webcil\\RestoManagement.Domain.wasm"
@@ -1627,8 +1627,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "f698obfl92",
-      "Integrity": "dzQwmF8aEFl4tXO6XBdhZmv9opSu93f9TpVYRRyNzgY=",
+      "Fingerprint": "tr6dej7hp2",
+      "Integrity": "iQ0nRqpOeCZFC6fvcaiLoG3Lsq45INxpVbiK9xiTwyA=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\RestoManagement.pdb"
@@ -1648,8 +1648,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "orxm9rujvy",
-      "Integrity": "dOlP8TIKs64Kdat63+JSFPR9GUh2bXyU0ksIN+fPwCQ=",
+      "Fingerprint": "41dz7gz776",
+      "Integrity": "SDwHoB8nXT+KfnU8FkYVo5BjFSa1NEEYFw+2Ztjc03M=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\webcil\\RestoManagement.wasm"
@@ -7871,7 +7871,7 @@
       "OriginalItemSpec": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Collections.Immutable.wasm"
     },
     {
-      "Identity": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\fh4322awfd-clnsbzemh3.gz",
+      "Identity": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\fh4322awfd-i7nvqxknd6.gz",
       "SourceId": "RestoManagement",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\",
@@ -7885,8 +7885,8 @@
       "RelatedAsset": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "4ngzi9fh7q",
-      "Integrity": "AHtG7px8m1XSATSXDetlWBi8N8rN0ZyBtnzh+u0R73I=",
+      "Fingerprint": "z7jlze3l9v",
+      "Integrity": "cUAtDyIIw0yseIM/iekkHAvdp5KZVFBnw+RqzEihAHY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -10370,12 +10370,12 @@
       "OriginalItemSpec": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Collections.wasm"
     },
     {
-      "Identity": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\uq76d0rs6w-6mj4k2bltl.gz",
+      "Identity": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\uq76d0rs6w-11h6sgutfw.gz",
       "SourceId": "RestoManagement",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/RestoManagement.Domain#[.{fingerprint=6mj4k2bltl}]!.wasm.gz",
+      "RelativePath": "_framework/RestoManagement.Domain#[.{fingerprint=11h6sgutfw}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -10384,8 +10384,8 @@
       "RelatedAsset": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\RestoManagement.Domain.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "tyxlcuf1nn",
-      "Integrity": "NZPVauFtx+AogkUZiw4Rb9+3myeo4xfCZP3dwwN3kPE=",
+      "Fingerprint": "568ylbbf0n",
+      "Integrity": "I/FQg6euABDcDG3BjRKdefxhfk5eLjh1sv+lqfNzVyY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\RestoManagement.Domain.wasm"
@@ -10559,12 +10559,12 @@
       "OriginalItemSpec": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Net.Primitives.wasm"
     },
     {
-      "Identity": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\vgilsp6pnb-f698obfl92.gz",
+      "Identity": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\vgilsp6pnb-tr6dej7hp2.gz",
       "SourceId": "RestoManagement",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/RestoManagement#[.{fingerprint=f698obfl92}]!.pdb.gz",
+      "RelativePath": "_framework/RestoManagement#[.{fingerprint=tr6dej7hp2}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -10573,19 +10573,19 @@
       "RelatedAsset": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\RestoManagement.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "31c23js4qo",
-      "Integrity": "mYdenpykuqPBh5zXXZWfDY2u0yL085Rebq/G2CWoSi4=",
+      "Fingerprint": "98vr5smbo7",
+      "Integrity": "J/TFovGv68G9blGP1QTGdSDSFme87DcYCXj2bkQ1IVU=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\RestoManagement.pdb"
     },
     {
-      "Identity": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\vh46wrhi1y-orxm9rujvy.gz",
+      "Identity": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\vh46wrhi1y-41dz7gz776.gz",
       "SourceId": "RestoManagement",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/RestoManagement#[.{fingerprint=orxm9rujvy}]!.wasm.gz",
+      "RelativePath": "_framework/RestoManagement#[.{fingerprint=41dz7gz776}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -10594,8 +10594,8 @@
       "RelatedAsset": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\RestoManagement.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "3ppapdohq2",
-      "Integrity": "aZLPQau/wIvtHRnRVIhoJhd0eEFAfG1CzZTnDWptjOA=",
+      "Fingerprint": "h8fofomdsr",
+      "Integrity": "IdK9pMoznqQBX0TWEP0jNfeMevoCedpiG5wmmQ0Vbe0=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\RestoManagement.wasm"
@@ -10727,12 +10727,12 @@
       "OriginalItemSpec": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Runtime.Intrinsics.wasm"
     },
     {
-      "Identity": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\w6nlbum0er-9vzluxitcn.gz",
+      "Identity": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\w6nlbum0er-acq20r431i.gz",
       "SourceId": "RestoManagement",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/RestoManagement.Domain#[.{fingerprint=9vzluxitcn}]!.pdb.gz",
+      "RelativePath": "_framework/RestoManagement.Domain#[.{fingerprint=acq20r431i}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -10741,8 +10741,8 @@
       "RelatedAsset": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\RestoManagement.Domain.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "iq1fnr7l7h",
-      "Integrity": "iilXmY1exs8t7zTarxQvhjgxkz23E8xY55YiVSXcx/k=",
+      "Fingerprint": "l190wkqta6",
+      "Integrity": "yf1PK8SJEuQnPe3cX9UX2kNDdOKacXRI6hSrolKGc3A=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\RestoManagement.Domain.pdb"
@@ -12385,11 +12385,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cB2sNbIISQJIThVsMDNHQVpYmrGuPVZcZ5OgtLvwUIA=\""
+          "Value": "\"PgXaTY+NWN8Y8/9BnW/9tkAtUIVSmSLTcAKiRnJNCAo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 16:37:41 GMT"
+          "Value": "Thu, 10 Apr 2025 22:32:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12399,18 +12399,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cB2sNbIISQJIThVsMDNHQVpYmrGuPVZcZ5OgtLvwUIA="
+          "Value": "sha256-PgXaTY+NWN8Y8/9BnW/9tkAtUIVSmSLTcAKiRnJNCAo="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\fh4322awfd-clnsbzemh3.gz",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\fh4322awfd-i7nvqxknd6.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000068110612"
+          "Quality": "0.000068101335"
         }
       ],
       "ResponseHeaders": [
@@ -12420,15 +12420,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14681"
+          "Value": "14683"
         },
         {
           "Name": "ETag",
-          "Value": "\"AHtG7px8m1XSATSXDetlWBi8N8rN0ZyBtnzh+u0R73I=\""
+          "Value": "\"cUAtDyIIw0yseIM/iekkHAvdp5KZVFBnw+RqzEihAHY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 16:12:52 GMT"
+          "Value": "Thu, 10 Apr 2025 22:13:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12448,19 +12448,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"cB2sNbIISQJIThVsMDNHQVpYmrGuPVZcZ5OgtLvwUIA=\""
+          "Value": "W/\"PgXaTY+NWN8Y8/9BnW/9tkAtUIVSmSLTcAKiRnJNCAo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cB2sNbIISQJIThVsMDNHQVpYmrGuPVZcZ5OgtLvwUIA="
+          "Value": "sha256-PgXaTY+NWN8Y8/9BnW/9tkAtUIVSmSLTcAKiRnJNCAo="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\fh4322awfd-clnsbzemh3.gz",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\fh4322awfd-i7nvqxknd6.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12469,7 +12469,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14681"
+          "Value": "14683"
         },
         {
           "Name": "Content-Type",
@@ -12477,11 +12477,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AHtG7px8m1XSATSXDetlWBi8N8rN0ZyBtnzh+u0R73I=\""
+          "Value": "\"cUAtDyIIw0yseIM/iekkHAvdp5KZVFBnw+RqzEihAHY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 16:12:52 GMT"
+          "Value": "Thu, 10 Apr 2025 22:13:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12499,7 +12499,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-AHtG7px8m1XSATSXDetlWBi8N8rN0ZyBtnzh+u0R73I="
+          "Value": "sha256-cUAtDyIIw0yseIM/iekkHAvdp5KZVFBnw+RqzEihAHY="
         }
       ]
     },
@@ -34097,764 +34097,7 @@
       ]
     },
     {
-      "Route": "_framework/RestoManagement.Domain.6mj4k2bltl.wasm",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\RestoManagement.Domain.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16149"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"svfkE8hu9syrfohu1+jYEkvyMQSe/hgC1WYpMXG3UlM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 14:44:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "6mj4k2bltl"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/RestoManagement.Domain.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-svfkE8hu9syrfohu1+jYEkvyMQSe/hgC1WYpMXG3UlM="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/RestoManagement.Domain.6mj4k2bltl.wasm",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\uq76d0rs6w-6mj4k2bltl.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000152765047"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6545"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"NZPVauFtx+AogkUZiw4Rb9+3myeo4xfCZP3dwwN3kPE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 14:44:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"svfkE8hu9syrfohu1+jYEkvyMQSe/hgC1WYpMXG3UlM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "6mj4k2bltl"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/RestoManagement.Domain.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-svfkE8hu9syrfohu1+jYEkvyMQSe/hgC1WYpMXG3UlM="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/RestoManagement.Domain.6mj4k2bltl.wasm.gz",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\uq76d0rs6w-6mj4k2bltl.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6545"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"NZPVauFtx+AogkUZiw4Rb9+3myeo4xfCZP3dwwN3kPE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 14:44:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "6mj4k2bltl"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/RestoManagement.Domain.wasm.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-NZPVauFtx+AogkUZiw4Rb9+3myeo4xfCZP3dwwN3kPE="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/RestoManagement.Domain.9vzluxitcn.pdb",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\RestoManagement.Domain.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16808"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"K/UrGgyv2yqEzFDpgj9GQG7agKIbbVN9sw4c8Hs9bkE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 14:44:15 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "9vzluxitcn"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/RestoManagement.Domain.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-K/UrGgyv2yqEzFDpgj9GQG7agKIbbVN9sw4c8Hs9bkE="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/RestoManagement.Domain.9vzluxitcn.pdb",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\w6nlbum0er-9vzluxitcn.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000110144289"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9078"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iilXmY1exs8t7zTarxQvhjgxkz23E8xY55YiVSXcx/k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 14:44:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"K/UrGgyv2yqEzFDpgj9GQG7agKIbbVN9sw4c8Hs9bkE=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "9vzluxitcn"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/RestoManagement.Domain.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-K/UrGgyv2yqEzFDpgj9GQG7agKIbbVN9sw4c8Hs9bkE="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/RestoManagement.Domain.9vzluxitcn.pdb.gz",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\w6nlbum0er-9vzluxitcn.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9078"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iilXmY1exs8t7zTarxQvhjgxkz23E8xY55YiVSXcx/k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 14:44:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "9vzluxitcn"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/RestoManagement.Domain.pdb.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-iilXmY1exs8t7zTarxQvhjgxkz23E8xY55YiVSXcx/k="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/RestoManagement.Domain.pdb",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\RestoManagement.Domain.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16808"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"K/UrGgyv2yqEzFDpgj9GQG7agKIbbVN9sw4c8Hs9bkE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 14:44:15 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-K/UrGgyv2yqEzFDpgj9GQG7agKIbbVN9sw4c8Hs9bkE="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/RestoManagement.Domain.pdb",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\w6nlbum0er-9vzluxitcn.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000110144289"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9078"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iilXmY1exs8t7zTarxQvhjgxkz23E8xY55YiVSXcx/k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 14:44:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"K/UrGgyv2yqEzFDpgj9GQG7agKIbbVN9sw4c8Hs9bkE=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-K/UrGgyv2yqEzFDpgj9GQG7agKIbbVN9sw4c8Hs9bkE="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/RestoManagement.Domain.pdb.gz",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\w6nlbum0er-9vzluxitcn.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9078"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iilXmY1exs8t7zTarxQvhjgxkz23E8xY55YiVSXcx/k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 14:44:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-iilXmY1exs8t7zTarxQvhjgxkz23E8xY55YiVSXcx/k="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/RestoManagement.Domain.wasm",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\RestoManagement.Domain.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16149"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"svfkE8hu9syrfohu1+jYEkvyMQSe/hgC1WYpMXG3UlM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 14:44:55 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-svfkE8hu9syrfohu1+jYEkvyMQSe/hgC1WYpMXG3UlM="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/RestoManagement.Domain.wasm",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\uq76d0rs6w-6mj4k2bltl.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000152765047"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6545"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"NZPVauFtx+AogkUZiw4Rb9+3myeo4xfCZP3dwwN3kPE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 14:44:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"svfkE8hu9syrfohu1+jYEkvyMQSe/hgC1WYpMXG3UlM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-svfkE8hu9syrfohu1+jYEkvyMQSe/hgC1WYpMXG3UlM="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/RestoManagement.Domain.wasm.gz",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\uq76d0rs6w-6mj4k2bltl.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6545"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"NZPVauFtx+AogkUZiw4Rb9+3myeo4xfCZP3dwwN3kPE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 14:44:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-NZPVauFtx+AogkUZiw4Rb9+3myeo4xfCZP3dwwN3kPE="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/RestoManagement.f698obfl92.pdb",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\RestoManagement.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "80764"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"dzQwmF8aEFl4tXO6XBdhZmv9opSu93f9TpVYRRyNzgY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 16:12:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "f698obfl92"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/RestoManagement.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-dzQwmF8aEFl4tXO6XBdhZmv9opSu93f9TpVYRRyNzgY="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/RestoManagement.f698obfl92.pdb",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\vgilsp6pnb-f698obfl92.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000016805028"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "59505"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"mYdenpykuqPBh5zXXZWfDY2u0yL085Rebq/G2CWoSi4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 16:12:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"dzQwmF8aEFl4tXO6XBdhZmv9opSu93f9TpVYRRyNzgY=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "f698obfl92"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/RestoManagement.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-dzQwmF8aEFl4tXO6XBdhZmv9opSu93f9TpVYRRyNzgY="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/RestoManagement.f698obfl92.pdb.gz",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\vgilsp6pnb-f698obfl92.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "59505"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"mYdenpykuqPBh5zXXZWfDY2u0yL085Rebq/G2CWoSi4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 16:12:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "f698obfl92"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/RestoManagement.pdb.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-mYdenpykuqPBh5zXXZWfDY2u0yL085Rebq/G2CWoSi4="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/RestoManagement.orxm9rujvy.wasm",
+      "Route": "_framework/RestoManagement.41dz7gz776.wasm",
       "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\RestoManagement.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -34864,7 +34107,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "149781"
+          "Value": "150805"
         },
         {
           "Name": "Content-Type",
@@ -34872,11 +34115,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dOlP8TIKs64Kdat63+JSFPR9GUh2bXyU0ksIN+fPwCQ=\""
+          "Value": "\"SDwHoB8nXT+KfnU8FkYVo5BjFSa1NEEYFw+2Ztjc03M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 16:12:51 GMT"
+          "Value": "Thu, 10 Apr 2025 22:09:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -34886,7 +34129,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "orxm9rujvy"
+          "Value": "41dz7gz776"
         },
         {
           "Name": "label",
@@ -34894,18 +34137,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-dOlP8TIKs64Kdat63+JSFPR9GUh2bXyU0ksIN+fPwCQ="
+          "Value": "sha256-SDwHoB8nXT+KfnU8FkYVo5BjFSa1NEEYFw+2Ztjc03M="
         }
       ]
     },
     {
-      "Route": "_framework/RestoManagement.orxm9rujvy.wasm",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\vh46wrhi1y-orxm9rujvy.gz",
+      "Route": "_framework/RestoManagement.41dz7gz776.wasm",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\vh46wrhi1y-41dz7gz776.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000020571052"
+          "Quality": "0.000020357892"
         }
       ],
       "ResponseHeaders": [
@@ -34915,15 +34158,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "48611"
+          "Value": "49120"
         },
         {
           "Name": "ETag",
-          "Value": "\"aZLPQau/wIvtHRnRVIhoJhd0eEFAfG1CzZTnDWptjOA=\""
+          "Value": "\"IdK9pMoznqQBX0TWEP0jNfeMevoCedpiG5wmmQ0Vbe0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 16:12:53 GMT"
+          "Value": "Thu, 10 Apr 2025 22:09:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -34943,13 +34186,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"dOlP8TIKs64Kdat63+JSFPR9GUh2bXyU0ksIN+fPwCQ=\""
+          "Value": "W/\"SDwHoB8nXT+KfnU8FkYVo5BjFSa1NEEYFw+2Ztjc03M=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "orxm9rujvy"
+          "Value": "41dz7gz776"
         },
         {
           "Name": "label",
@@ -34957,13 +34200,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-dOlP8TIKs64Kdat63+JSFPR9GUh2bXyU0ksIN+fPwCQ="
+          "Value": "sha256-SDwHoB8nXT+KfnU8FkYVo5BjFSa1NEEYFw+2Ztjc03M="
         }
       ]
     },
     {
-      "Route": "_framework/RestoManagement.orxm9rujvy.wasm.gz",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\vh46wrhi1y-orxm9rujvy.gz",
+      "Route": "_framework/RestoManagement.41dz7gz776.wasm.gz",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\vh46wrhi1y-41dz7gz776.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -34972,7 +34215,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "48611"
+          "Value": "49120"
         },
         {
           "Name": "Content-Type",
@@ -34980,11 +34223,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aZLPQau/wIvtHRnRVIhoJhd0eEFAfG1CzZTnDWptjOA=\""
+          "Value": "\"IdK9pMoznqQBX0TWEP0jNfeMevoCedpiG5wmmQ0Vbe0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 16:12:53 GMT"
+          "Value": "Thu, 10 Apr 2025 22:09:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -35002,7 +34245,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "orxm9rujvy"
+          "Value": "41dz7gz776"
         },
         {
           "Name": "label",
@@ -35010,7 +34253,603 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-aZLPQau/wIvtHRnRVIhoJhd0eEFAfG1CzZTnDWptjOA="
+          "Value": "sha256-IdK9pMoznqQBX0TWEP0jNfeMevoCedpiG5wmmQ0Vbe0="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/RestoManagement.Domain.11h6sgutfw.wasm",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\RestoManagement.Domain.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16149"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tZf8XnNTG59nGjv+Gxx/TeOi1nSQM1IPMYthTG2F1nQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 20:47:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "11h6sgutfw"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/RestoManagement.Domain.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tZf8XnNTG59nGjv+Gxx/TeOi1nSQM1IPMYthTG2F1nQ="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/RestoManagement.Domain.11h6sgutfw.wasm",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\uq76d0rs6w-11h6sgutfw.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000150557061"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6641"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I/FQg6euABDcDG3BjRKdefxhfk5eLjh1sv+lqfNzVyY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 20:47:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"tZf8XnNTG59nGjv+Gxx/TeOi1nSQM1IPMYthTG2F1nQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "11h6sgutfw"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/RestoManagement.Domain.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tZf8XnNTG59nGjv+Gxx/TeOi1nSQM1IPMYthTG2F1nQ="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/RestoManagement.Domain.11h6sgutfw.wasm.gz",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\uq76d0rs6w-11h6sgutfw.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6641"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I/FQg6euABDcDG3BjRKdefxhfk5eLjh1sv+lqfNzVyY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 20:47:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "11h6sgutfw"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/RestoManagement.Domain.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-I/FQg6euABDcDG3BjRKdefxhfk5eLjh1sv+lqfNzVyY="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/RestoManagement.Domain.acq20r431i.pdb",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\RestoManagement.Domain.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17008"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2j0h3LY+4ecyJd07c20K7oSn8ElahfHKjpyGvW6688A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 20:47:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "acq20r431i"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/RestoManagement.Domain.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2j0h3LY+4ecyJd07c20K7oSn8ElahfHKjpyGvW6688A="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/RestoManagement.Domain.acq20r431i.pdb",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\w6nlbum0er-acq20r431i.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000108448108"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9220"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yf1PK8SJEuQnPe3cX9UX2kNDdOKacXRI6hSrolKGc3A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 20:47:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"2j0h3LY+4ecyJd07c20K7oSn8ElahfHKjpyGvW6688A=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "acq20r431i"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/RestoManagement.Domain.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2j0h3LY+4ecyJd07c20K7oSn8ElahfHKjpyGvW6688A="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/RestoManagement.Domain.acq20r431i.pdb.gz",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\w6nlbum0er-acq20r431i.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9220"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yf1PK8SJEuQnPe3cX9UX2kNDdOKacXRI6hSrolKGc3A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 20:47:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "acq20r431i"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/RestoManagement.Domain.pdb.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yf1PK8SJEuQnPe3cX9UX2kNDdOKacXRI6hSrolKGc3A="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/RestoManagement.Domain.pdb",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\RestoManagement.Domain.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17008"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2j0h3LY+4ecyJd07c20K7oSn8ElahfHKjpyGvW6688A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 20:47:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2j0h3LY+4ecyJd07c20K7oSn8ElahfHKjpyGvW6688A="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/RestoManagement.Domain.pdb",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\w6nlbum0er-acq20r431i.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000108448108"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9220"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yf1PK8SJEuQnPe3cX9UX2kNDdOKacXRI6hSrolKGc3A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 20:47:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"2j0h3LY+4ecyJd07c20K7oSn8ElahfHKjpyGvW6688A=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2j0h3LY+4ecyJd07c20K7oSn8ElahfHKjpyGvW6688A="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/RestoManagement.Domain.pdb.gz",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\w6nlbum0er-acq20r431i.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9220"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yf1PK8SJEuQnPe3cX9UX2kNDdOKacXRI6hSrolKGc3A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 20:47:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yf1PK8SJEuQnPe3cX9UX2kNDdOKacXRI6hSrolKGc3A="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/RestoManagement.Domain.wasm",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\RestoManagement.Domain.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16149"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tZf8XnNTG59nGjv+Gxx/TeOi1nSQM1IPMYthTG2F1nQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 20:47:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tZf8XnNTG59nGjv+Gxx/TeOi1nSQM1IPMYthTG2F1nQ="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/RestoManagement.Domain.wasm",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\uq76d0rs6w-11h6sgutfw.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000150557061"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6641"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I/FQg6euABDcDG3BjRKdefxhfk5eLjh1sv+lqfNzVyY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 20:47:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"tZf8XnNTG59nGjv+Gxx/TeOi1nSQM1IPMYthTG2F1nQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tZf8XnNTG59nGjv+Gxx/TeOi1nSQM1IPMYthTG2F1nQ="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/RestoManagement.Domain.wasm.gz",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\uq76d0rs6w-11h6sgutfw.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6641"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I/FQg6euABDcDG3BjRKdefxhfk5eLjh1sv+lqfNzVyY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 20:47:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-I/FQg6euABDcDG3BjRKdefxhfk5eLjh1sv+lqfNzVyY="
         }
       ]
     },
@@ -35025,7 +34864,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "80764"
+          "Value": "81328"
         },
         {
           "Name": "Content-Type",
@@ -35033,11 +34872,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dzQwmF8aEFl4tXO6XBdhZmv9opSu93f9TpVYRRyNzgY=\""
+          "Value": "\"iQ0nRqpOeCZFC6fvcaiLoG3Lsq45INxpVbiK9xiTwyA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 16:12:51 GMT"
+          "Value": "Thu, 10 Apr 2025 22:09:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -35047,18 +34886,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dzQwmF8aEFl4tXO6XBdhZmv9opSu93f9TpVYRRyNzgY="
+          "Value": "sha256-iQ0nRqpOeCZFC6fvcaiLoG3Lsq45INxpVbiK9xiTwyA="
         }
       ]
     },
     {
       "Route": "_framework/RestoManagement.pdb",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\vgilsp6pnb-f698obfl92.gz",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\vgilsp6pnb-tr6dej7hp2.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000016805028"
+          "Quality": "0.000016668611"
         }
       ],
       "ResponseHeaders": [
@@ -35068,15 +34907,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "59505"
+          "Value": "59992"
         },
         {
           "Name": "ETag",
-          "Value": "\"mYdenpykuqPBh5zXXZWfDY2u0yL085Rebq/G2CWoSi4=\""
+          "Value": "\"J/TFovGv68G9blGP1QTGdSDSFme87DcYCXj2bkQ1IVU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 16:12:53 GMT"
+          "Value": "Thu, 10 Apr 2025 22:09:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -35096,19 +34935,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"dzQwmF8aEFl4tXO6XBdhZmv9opSu93f9TpVYRRyNzgY=\""
+          "Value": "W/\"iQ0nRqpOeCZFC6fvcaiLoG3Lsq45INxpVbiK9xiTwyA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dzQwmF8aEFl4tXO6XBdhZmv9opSu93f9TpVYRRyNzgY="
+          "Value": "sha256-iQ0nRqpOeCZFC6fvcaiLoG3Lsq45INxpVbiK9xiTwyA="
         }
       ]
     },
     {
       "Route": "_framework/RestoManagement.pdb.gz",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\vgilsp6pnb-f698obfl92.gz",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\vgilsp6pnb-tr6dej7hp2.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -35117,7 +34956,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "59505"
+          "Value": "59992"
         },
         {
           "Name": "Content-Type",
@@ -35125,11 +34964,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mYdenpykuqPBh5zXXZWfDY2u0yL085Rebq/G2CWoSi4=\""
+          "Value": "\"J/TFovGv68G9blGP1QTGdSDSFme87DcYCXj2bkQ1IVU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 16:12:53 GMT"
+          "Value": "Thu, 10 Apr 2025 22:09:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -35147,7 +34986,168 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-mYdenpykuqPBh5zXXZWfDY2u0yL085Rebq/G2CWoSi4="
+          "Value": "sha256-J/TFovGv68G9blGP1QTGdSDSFme87DcYCXj2bkQ1IVU="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/RestoManagement.tr6dej7hp2.pdb",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\bin\\Debug\\net9.0\\wwwroot\\_framework\\RestoManagement.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "81328"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iQ0nRqpOeCZFC6fvcaiLoG3Lsq45INxpVbiK9xiTwyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 22:09:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tr6dej7hp2"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/RestoManagement.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iQ0nRqpOeCZFC6fvcaiLoG3Lsq45INxpVbiK9xiTwyA="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/RestoManagement.tr6dej7hp2.pdb",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\vgilsp6pnb-tr6dej7hp2.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000016668611"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59992"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J/TFovGv68G9blGP1QTGdSDSFme87DcYCXj2bkQ1IVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 22:09:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"iQ0nRqpOeCZFC6fvcaiLoG3Lsq45INxpVbiK9xiTwyA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tr6dej7hp2"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/RestoManagement.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iQ0nRqpOeCZFC6fvcaiLoG3Lsq45INxpVbiK9xiTwyA="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/RestoManagement.tr6dej7hp2.pdb.gz",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\vgilsp6pnb-tr6dej7hp2.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59992"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J/TFovGv68G9blGP1QTGdSDSFme87DcYCXj2bkQ1IVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 22:09:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tr6dej7hp2"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/RestoManagement.pdb.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J/TFovGv68G9blGP1QTGdSDSFme87DcYCXj2bkQ1IVU="
         }
       ]
     },
@@ -35162,7 +35162,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "149781"
+          "Value": "150805"
         },
         {
           "Name": "Content-Type",
@@ -35170,11 +35170,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dOlP8TIKs64Kdat63+JSFPR9GUh2bXyU0ksIN+fPwCQ=\""
+          "Value": "\"SDwHoB8nXT+KfnU8FkYVo5BjFSa1NEEYFw+2Ztjc03M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 16:12:51 GMT"
+          "Value": "Thu, 10 Apr 2025 22:09:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -35184,18 +35184,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dOlP8TIKs64Kdat63+JSFPR9GUh2bXyU0ksIN+fPwCQ="
+          "Value": "sha256-SDwHoB8nXT+KfnU8FkYVo5BjFSa1NEEYFw+2Ztjc03M="
         }
       ]
     },
     {
       "Route": "_framework/RestoManagement.wasm",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\vh46wrhi1y-orxm9rujvy.gz",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\vh46wrhi1y-41dz7gz776.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000020571052"
+          "Quality": "0.000020357892"
         }
       ],
       "ResponseHeaders": [
@@ -35205,15 +35205,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "48611"
+          "Value": "49120"
         },
         {
           "Name": "ETag",
-          "Value": "\"aZLPQau/wIvtHRnRVIhoJhd0eEFAfG1CzZTnDWptjOA=\""
+          "Value": "\"IdK9pMoznqQBX0TWEP0jNfeMevoCedpiG5wmmQ0Vbe0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 16:12:53 GMT"
+          "Value": "Thu, 10 Apr 2025 22:09:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -35233,19 +35233,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"dOlP8TIKs64Kdat63+JSFPR9GUh2bXyU0ksIN+fPwCQ=\""
+          "Value": "W/\"SDwHoB8nXT+KfnU8FkYVo5BjFSa1NEEYFw+2Ztjc03M=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dOlP8TIKs64Kdat63+JSFPR9GUh2bXyU0ksIN+fPwCQ="
+          "Value": "sha256-SDwHoB8nXT+KfnU8FkYVo5BjFSa1NEEYFw+2Ztjc03M="
         }
       ]
     },
     {
       "Route": "_framework/RestoManagement.wasm.gz",
-      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\vh46wrhi1y-orxm9rujvy.gz",
+      "AssetFile": "C:\\Users\\osakhnou\\Desktop\\RestoManagement\\RestoManagement\\obj\\Debug\\net9.0\\compressed\\vh46wrhi1y-41dz7gz776.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -35254,7 +35254,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "48611"
+          "Value": "49120"
         },
         {
           "Name": "Content-Type",
@@ -35262,11 +35262,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aZLPQau/wIvtHRnRVIhoJhd0eEFAfG1CzZTnDWptjOA=\""
+          "Value": "\"IdK9pMoznqQBX0TWEP0jNfeMevoCedpiG5wmmQ0Vbe0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 16:12:53 GMT"
+          "Value": "Thu, 10 Apr 2025 22:09:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -35284,7 +35284,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-aZLPQau/wIvtHRnRVIhoJhd0eEFAfG1CzZTnDWptjOA="
+          "Value": "sha256-IdK9pMoznqQBX0TWEP0jNfeMevoCedpiG5wmmQ0Vbe0="
         }
       ]
     },

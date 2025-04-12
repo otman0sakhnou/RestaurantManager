@@ -101,9 +101,21 @@ public class RestaurantRepository : IRestaurantRepository
         {
             if (restaurant == null)
                 throw new ArgumentNullException(nameof(restaurant), "L'objet restaurant ne peut pas être nul.");
+            
+            var existingRestaurant = await _context.Restaurants.FindAsync(restaurant.Id);
+        
+            if (existingRestaurant == null)
+                throw new KeyNotFoundException($"Restaurant with ID {restaurant.Id} not found.");
 
+            // Update the properties of the existing entity
+            _context.Entry(existingRestaurant).CurrentValues.SetValues(restaurant);
 
-            _context.Restaurants.Update(restaurant);
+            // Handle the image separately if it's part of the update
+            if (!string.IsNullOrEmpty(restaurant.ImagePath))
+            {
+                existingRestaurant.ImagePath = restaurant.ImagePath;
+            }
+
             await _context.SaveChangesAsync();
         }
         catch (Exception ex)
@@ -112,4 +124,5 @@ public class RestaurantRepository : IRestaurantRepository
             throw;
         }
     }
+
 }

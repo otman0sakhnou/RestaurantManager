@@ -70,15 +70,24 @@ public class RestaurantService
     }
 
   
- public async Task<string> GetImageUrlAsync(string imagePath)
- {
-     var baseUrl = _http.BaseAddress.ToString();
-     
-     if (imagePath.StartsWith("images/"))
-         return $"{baseUrl}{imagePath}";
-     else
-         return $"{imagePath}";
- }
+    public async Task<string> GetImageUrlAsync(string imagePath)
+    {
+        if (string.IsNullOrEmpty(imagePath))
+            return string.Empty;
+        
+        if (imagePath.StartsWith("http://") || imagePath.StartsWith("https://"))
+            return imagePath;
+        
+        var baseUrl = _http.BaseAddress.ToString();
+    
+        if (baseUrl.EndsWith("/"))
+            baseUrl = baseUrl.TrimEnd('/');
+        
+        if (imagePath.StartsWith("/"))
+            imagePath = imagePath.Substring(1);
+        
+        return $"{baseUrl}/{imagePath}";
+    }
 
     private MultipartFormDataContent ToMultipartContent(RestaurantReq req)
     {

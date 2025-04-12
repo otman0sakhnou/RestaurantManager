@@ -119,10 +119,19 @@ public class RestaurantService : IRestaurantService
         try
         {
             var restaurant = _mapper.Map<Restaurant>(restaurantReq);
+
             if (restaurantReq.Image != null)
             {
                 var imagePath = await UploadImageAsync(restaurantReq.Image);
                 restaurant.ImagePath = imagePath;
+            }
+            else
+            {
+                var existingRestaurant = await _repository.GetByIdAsync(restaurantReq.Id);
+                if (existingRestaurant != null)
+                {
+                    restaurant.ImagePath = existingRestaurant.ImagePath;
+                }
             }
 
             _logger.LogInformation("Mise à jour du restaurant ID : {Id}", restaurant.Id);

@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "RestoManagement",
   "resources": {
-    "hash": "sha256-eqSdSFXAikDYIKRTtJVUsAj90uLcGLzEO8vuqS35G3w=",
+    "hash": "sha256-l+/+Zm+2U9j0DnShwb67wHDxA+IH2AdpqRHHra7q4xs=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authentication.1jy2czmvcw.wasm": "Microsoft.AspNetCore.Authentication.wasm",
       "Microsoft.AspNetCore.Authentication.Abstractions.teru10q8m9.wasm": "Microsoft.AspNetCore.Authentication.Abstractions.wasm",
@@ -238,10 +238,10 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "RestoManagement.Domain.6mj4k2bltl.wasm": "RestoManagement.Domain.wasm",
-      "RestoManagement.Domain.9vzluxitcn.pdb": "RestoManagement.Domain.pdb",
-      "RestoManagement.orxm9rujvy.wasm": "RestoManagement.wasm",
-      "RestoManagement.f698obfl92.pdb": "RestoManagement.pdb"
+      "RestoManagement.Domain.11h6sgutfw.wasm": "RestoManagement.Domain.wasm",
+      "RestoManagement.Domain.acq20r431i.pdb": "RestoManagement.Domain.pdb",
+      "RestoManagement.41dz7gz776.wasm": "RestoManagement.wasm",
+      "RestoManagement.tr6dej7hp2.pdb": "RestoManagement.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.1p93gcv9fh.js": "sha256-1UPiprzN3JhPftx3be7XEMaYlUN+chRF41CuttiWVtQ="
@@ -488,12 +488,12 @@
       "WindowsBase.ag32297siy.wasm": "sha256-BgyZxTgdU9rIYlNC9ZMiMjnvBAJSL0eQH8Y87o1M+q4=",
       "mscorlib.vt9pwshhot.wasm": "sha256-/aFxOaPc1iTNlJw0z4/RGEMD0nzl4qVE3SF4wMsLgp0=",
       "netstandard.or41gtprh3.wasm": "sha256-nD1KqAI5YYz+YohqHaZ5EmXi7Eq9Uy9sUknnI8sj1AM=",
-      "RestoManagement.Domain.6mj4k2bltl.wasm": "sha256-svfkE8hu9syrfohu1+jYEkvyMQSe/hgC1WYpMXG3UlM=",
-      "RestoManagement.orxm9rujvy.wasm": "sha256-dOlP8TIKs64Kdat63+JSFPR9GUh2bXyU0ksIN+fPwCQ="
+      "RestoManagement.Domain.11h6sgutfw.wasm": "sha256-tZf8XnNTG59nGjv+Gxx/TeOi1nSQM1IPMYthTG2F1nQ=",
+      "RestoManagement.41dz7gz776.wasm": "sha256-SDwHoB8nXT+KfnU8FkYVo5BjFSa1NEEYFw+2Ztjc03M="
     },
     "pdb": {
-      "RestoManagement.Domain.9vzluxitcn.pdb": "sha256-K/UrGgyv2yqEzFDpgj9GQG7agKIbbVN9sw4c8Hs9bkE=",
-      "RestoManagement.f698obfl92.pdb": "sha256-dzQwmF8aEFl4tXO6XBdhZmv9opSu93f9TpVYRRyNzgY="
+      "RestoManagement.Domain.acq20r431i.pdb": "sha256-2j0h3LY+4ecyJd07c20K7oSn8ElahfHKjpyGvW6688A=",
+      "RestoManagement.tr6dej7hp2.pdb": "sha256-iQ0nRqpOeCZFC6fvcaiLoG3Lsq45INxpVbiK9xiTwyA="
     }
   },
   "cacheBootResources": true,

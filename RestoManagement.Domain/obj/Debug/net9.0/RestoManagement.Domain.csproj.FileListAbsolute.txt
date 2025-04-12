@@ -10,3 +10,4 @@ C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Domain\obj\Debug\net9.
 C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Domain\obj\Debug\net9.0\refint\RestoManagement.Domain.dll
 C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Domain\obj\Debug\net9.0\RestoManagement.Domain.pdb
 C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Domain\obj\Debug\net9.0\ref\RestoManagement.Domain.dll
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Domain\obj\Debug\net9.0\RestoManagement.Domain.sourcelink.json

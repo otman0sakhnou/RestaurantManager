@@ -193,3 +193,4 @@ C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.API\bin\Debug\net9.0\M
 C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.API\bin\Debug\net9.0\Microsoft.AspNetCore.Metadata.dll
 C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.API\bin\Debug\net9.0\Microsoft.JSInterop.dll
 C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.API\bin\Debug\net9.0\RestoManagement.API.staticwebassets.runtime.json
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.API\obj\Debug\net9.0\RestoManagement.API.sourcelink.json

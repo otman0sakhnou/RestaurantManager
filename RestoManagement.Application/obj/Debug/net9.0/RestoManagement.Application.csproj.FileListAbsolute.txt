@@ -15,3 +15,4 @@ C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\obj\Debug\
 C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\obj\Debug\net9.0\refint\RestoManagement.Application.dll
 C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\obj\Debug\net9.0\RestoManagement.Application.pdb
 C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\obj\Debug\net9.0\ref\RestoManagement.Application.dll
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Application\obj\Debug\net9.0\RestoManagement.Application.sourcelink.json

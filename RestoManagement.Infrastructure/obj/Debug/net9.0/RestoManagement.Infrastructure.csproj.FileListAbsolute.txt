@@ -15,3 +15,4 @@ C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\obj\Deb
 C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\obj\Debug\net9.0\RestoManagement.Infrastructure.pdb
 C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\obj\Debug\net9.0\RestoManagement.Infrastructure.genruntimeconfig.cache
 C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\obj\Debug\net9.0\ref\RestoManagement.Infrastructure.dll
+C:\Users\osakhnou\Desktop\RestoManagement\RestoManagement.Infrastructure\obj\Debug\net9.0\RestoManagement.Infrastructure.sourcelink.json
